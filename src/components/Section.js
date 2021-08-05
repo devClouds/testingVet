@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 
 function Section(props) {
 
-    const paralax = (props.paralax === true ? '' : 'paralax');
+    const paralax = (props.paralax !== undefined ? 'paralax' : '');
 
     return (
         <section id={props.name}>

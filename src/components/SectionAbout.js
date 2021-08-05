@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-
 import Section from './Section'
 
 import buildingImage from '../img/Building.jpg'
