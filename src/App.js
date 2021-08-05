@@ -1,6 +1,10 @@
 // import logo from './logo.svg';
 // import './App.css';
+import './css/Responsive.scss'
 import './css/App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import Header from './components/Header';
 import Main from './components/Main';
 

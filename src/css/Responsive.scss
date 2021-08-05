@@ -1,0 +1,102 @@
+@media screen and (min-width:768px) {
+    .img-size{
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (max-width:767px) {
+
+
+
+    body, p,.button{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
+    h5, label {
+        font-size: 20px;
+    }
+
+    .header-text{
+        font-size: 52px;
+    }
+
+    .sub-header-text{
+        font-size: 32px;
+    }
+
+    .navbar-brand-logo{
+        width: 200px;
+    }
+
+
+}
+
+@media screen and (max-width:575px) {
+    body, p,.button, .footer-wrapper p {
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    h5, label {
+        font-size: 16px;
+    }
+
+    .header-text{
+        font-size: 36px;
+    }
+
+    .sub-header-text{
+        font-size: 24px;
+    }
+
+    .navbar-brand-logo{
+        width: 175px;
+    }
+
+    .paralax{
+        background-attachment: scroll;
+        background-size: 100%;
+        background-position: top;
+        min-height: auto;
+
+
+        justify-content: center;
+    }
+
+    .paralax-content{
+        margin-top: 60%;
+        text-align: center;
+        
+        p{
+            color: black;
+        }
+    }
+}
