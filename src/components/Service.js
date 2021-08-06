@@ -15,16 +15,16 @@ function Service(props) {
 
     // }
 
-    const [counter, setShowModal] = useState(0);
+    const [showModal, setShowModal] = useState(false);
 
-    const increaseCounter = () => {
-        setShowModal(counter + 1);
-        alert(counter);
+    const openModal = () => {
+        setShowModal(prev => !prev);
+        alert(showModal);
     }
 
     return (
         <Col sm="6" lg="3" className='mb-4'>
-            <div className='services-box' onClick={increaseCounter}>
+            <div className='services-box' onClick={openModal}>
                 <div className="services-box-icon">
                     <img src={props.imagePath} />
                 </div>

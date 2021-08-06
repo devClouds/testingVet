@@ -2,10 +2,6 @@ import React from 'react'
 
 function ServiceModal(props, showModal, setShowModal) {
 
-    function showModal(){
-        alert('clicked child');
-    }
-
     return (
         <div className="modal fade services-modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered justify-content-center " role="document">
