@@ -1,16 +1,15 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { Row } from 'react-bootstrap'
 
-import SectionAbout from './SectionAbout'
-import SectionContact from './SectionContact'
-import SectionNews from './SectionNews'
-import SectionShop from './SectionShop'
-
+import News from './News'
 
 function MainNews() {
     return (
-        <div>
-            <p>Personel</p>
-        </div>
+        <Row>
+            <News title='kotek'/>
+            <News title='piesek'/>
+            <News title='ryba'/>
+        </Row>
     )
 }
 
