@@ -15,11 +15,17 @@ function Service(props) {
 
     // }
 
+    // const [showModal, setShowModal] = useState(false);
+
+    // const openModal = () => {
+    //     setShowModal(prev => !prev);
+    //     alert(showModal);
+    // }
+
     const [showModal, setShowModal] = useState(false);
 
     const openModal = () => {
         setShowModal(prev => !prev);
-        alert(showModal);
     }
 
     return (
@@ -30,7 +36,10 @@ function Service(props) {
                 </div>
                 <div className="services-box-content">
                     <h4><strong>{props.title}</strong></h4>
-                    <ServiceModal title={props.title} imagePath={props.imagePath}/>
+                    <ServiceModal 
+                        title={props.title} 
+                        imagePath={props.imagePath} 
+                        show={showModal}/>
                 </div>
             </div>
         </Col>
