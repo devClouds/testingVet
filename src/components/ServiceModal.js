@@ -23,7 +23,7 @@ function ServiceModal(props) {
                 <p className='text-muted'>
                     {props.children}
                 </p>
-                <button className='button-small mt-4 px-sm-5'>Close</button>
+                <button className='button-small mt-4 px-sm-5'>Zamknij</button>
             </Modal.Body>
         </Modal>
     )
