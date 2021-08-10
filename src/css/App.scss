@@ -14,6 +14,7 @@
 !!5) Zmniejszać czcionkę h3? na mniejszych ekranach
 6) Czy ustalić wysokość service card na min 307px na większych ekranach?
 7) Dodać marginesy w p na małych ekranach lub padding
+8) Wyłaczyć zamykanie się modal services po kliknięciu w innej miejsce niż button lub poza modal
 
 
 
@@ -280,13 +281,29 @@ h3{
     
     }
 
-    .services-box-icon, .services-modal-icon{
+    .services-box-icon{
         padding: 2em 0 0 0;
 
         img{
-            width: 6em;
+            max-width: 6rem;
             margin-bottom: 2em;
         }
+    }
+
+    .services-modal{
+        padding-right: 0px !important;
+
+
+        .modal-header{
+            flex-direction: column;
+            border-bottom: none;
+            padding: 1rem 1rem 0 1rem;
+        }
+    }
+
+    .img-modal{
+        width: 7rem;
+        padding: 2em 0 1em 0 ;
     }
     
 /*------------------------------------*/
