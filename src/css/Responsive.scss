@@ -109,6 +109,19 @@
                 color: black;
             }
         }
+
+        .services-box-content{
+            padding: .5em;
+        }
+        .services-box-icon {
+            padding: 1em;
+
+            img{
+                max-width: 3.5rem;
+                margin-bottom: .5rem;
+            }
+
+        }
     }
  
 }
