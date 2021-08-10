@@ -1,7 +1,9 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import Section from './Section'
-import Service from './Service'
+import Service
+    from './Service'
+
 
 import SyringeImage from '../img/services/syringe.svg'
 import CarImage from '../img/services/car.svg'
@@ -21,15 +23,46 @@ function SectionServices() {
                 </p>
             </div>
             <Row className='justify-content-center'>
-                <Service title='Szczepienia' imagePath={SyringeImage} />
-                <Service title='Kastracja' imagePath={ScrissorsImage} />
-                <Service title='Chirurgia tkanek' imagePath={ScalpelImage} />
-                <Service title='Wizyty domowe' imagePath={CarImage} />
+                <Service
 
-                <Service title='Paszport' imagePath={PassportImage} />
-                <Service title='Czipowanie' imagePath={ChipImage} />
-                <Service title='Profilaktyka' imagePath={BeforeImage} />
-                <Service title='Badania laboratoryjne' imagePath={MicroscopeImage} />
+
+                    title='Szczepienia'
+                    imagePath={SyringeImage} >
+
+                    Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich skończywszy. Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%.
+
+                </Service>
+                <Service
+                    title='Kastracja'
+                    imagePath={ScrissorsImage} >
+
+                    Kastrację wykonujemy z jeszcze większą przyjemnością niż zwykle ponieważ kochamy ucinać jajka aż po same końce. Czasem od lewej, czasem od prawej - ważne by się jajec pozbyć na zawsze.
+                </Service>
+                <Service
+                    title='Chirurgia tkanek'
+                    imagePath={ScalpelImage} >
+                </Service>
+                <Service
+                    title='Wizyty domowe'
+                    imagePath={CarImage} >
+                </Service>
+
+                <Service
+                    title='Paszport'
+                    imagePath={PassportImage} >
+                </Service>
+                <Service
+                    title='Czipowanie'
+                    imagePath={ChipImage} >
+                </Service>
+                <Service
+                    title='Profilaktyka'
+                    imagePath={BeforeImage} >
+                </Service>
+                <Service
+                    title='Badania laboratoryjne'
+                    imagePath={MicroscopeImage} >
+                </Service>
             </Row>
         </Section>
     )
