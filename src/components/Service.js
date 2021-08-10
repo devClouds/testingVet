@@ -18,7 +18,7 @@ function Service(props) {
                     <img className ='' src={props.imagePath} />
                 </div>
                 <div className="services-box-content">
-                    <h4><strong>{props.title}</strong></h4>
+                    <h4>{props.title}</h4>
                     <ServiceModal 
                         title={props.title} 
                         imagePath={props.imagePath} 

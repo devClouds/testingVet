@@ -22,10 +22,10 @@ Title section - jako komponent?
 */
 
 
+//@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 
-
-$font-QS: 'Quicksand';
+$font-QS: 'Quicksand', sans-serif;
 $font-Exo: 'Exo';
 $font-Lato: 'Lato';
 
@@ -42,8 +42,9 @@ $color-orange: #F9A13D;
 html, body{
     background-color: #ffff;
     color: #000;
-    font-family: $font-QS !important;
+ //   font-family: $font-QS;
     font-size: 18px;
+    font-weight: 300;
     margin: 0;
     margin-top: 0px !important;
     width: 100%;
@@ -89,7 +90,7 @@ h3{
 
 @mixin paragraph-title($color){
     display: inline-block;
-    font-weight: 700;
+    //font-weight: 700;
     margin-bottom: 30px;
     text-transform: uppercase;
     color: $color;
