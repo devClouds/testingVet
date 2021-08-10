@@ -13,7 +13,7 @@
 
     body{
 
-        p,.button{
+        p,.button, td, .button-small{
             font-size: 16px;
         }
     
@@ -59,7 +59,7 @@
 @media screen and (max-width:575px) {
 
     body{
-        p,.button, .footer-wrapper p {
+        p,.button, .footer-wrapper p, td, .button-small {
             font-size: 14px;
         }
     
