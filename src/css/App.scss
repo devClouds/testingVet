@@ -23,11 +23,13 @@ Title section - jako komponent?
 
 
 //@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Lato:wght@300&display=swap');
 
 
 $font-QS: 'Quicksand', sans-serif;
-$font-Exo: 'Exo';
-$font-Lato: 'Lato';
+$font-Exo: 'Exo 2', sans-serif;
+$font-Lato: 'Lato', sans-serif;
 
 $color-turcus-dark: #17ae92;
 $color-turcus-bright: #5DBCD2;
@@ -64,9 +66,9 @@ p.margined{
     margin-bottom: 2rem;
 }
 
-a:link, a:visited{
+a, a:link, a:visited, a:hover{
     text-decoration: none;
-    color: inherit;
+    color: inherit !important;
 }
 
 button:focus{
@@ -163,7 +165,8 @@ h3{
 
 .sub-header-text{
     font-size: 40px;
-    font-family: 'Uni-Sans-Thin'; 
+    //font-family: 'Uni-Sans-Thin'; 
+    //font-family: $font-Exo;
     color: #fff;
     margin-bottom: 0px !important; 
     text-shadow: 3px 3px 5px #000;
@@ -171,8 +174,9 @@ h3{
 
 .header-text{
     font-size: 70px;
-    font-weight: bold;
-    font-family: 'Uni-Sans-Heavy';
+    //font-weight: bold;
+    //font-family: 'Uni-Sans-Heavy';
+    //font-family: $font-Exo;
     color: #fff;
     text-transform: uppercase;
     margin-top: 5px !important;

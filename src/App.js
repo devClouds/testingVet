@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
-import './css/Responsive.scss'
 import './css/App.scss';
+import './css/Responsive.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
