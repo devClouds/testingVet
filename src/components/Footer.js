@@ -1,10 +1,11 @@
 import React, {Fragment} from 'react'
+import ScrollTopButton from './ScrollTopButton'
 import Section from './Section'
 
 function Footer() {
     return (
         <Fragment>
-            <button id="scroll-top-button" title="Go to the top"><i class="fas fa-angle-double-up"></i></button>
+            <ScrollTopButton/>
             <Section name="footer">
                 <div className="justify-content-center text-center">
                     <p>Copyright &copy; 2021 - <a href="https://www.linkedin.com/in/krzysztof-piasecki-784304b9/">Krzysztof Piasecki</a></p>

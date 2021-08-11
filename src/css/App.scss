@@ -413,18 +413,10 @@ label{
     right: 50px;
     bottom: 85px;
     background-color: $color-orange;
-    opacity: 0;
-    visibility: hidden;
     z-index: 500;
     transition: background-color .3s, opacity .5s, visibility .5s;
 
 }
-
-#scroll-top-button.show {
-    opacity: 1;
-    visibility: visible;
-  }
-
 
 #scroll-top-button:hover {
     cursor: pointer;
@@ -435,7 +427,7 @@ label{
     }
   }
 #scroll-top-button:active {
-    background-color: #555;
+    background-color: $color-turcus-bright;
   }
 
 
