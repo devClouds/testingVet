@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import './css/App.scss';
 import './css/Responsive.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './pages/Home'
 import Staff from './pages/Staff'
 import Building from './pages/Building'
+import Menu from './components/Menu';
 
 function App() {
 
@@ -16,14 +15,14 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <ul className="navbar-nav mr-auto">
               <li><Link to={'/'} className="nav-link"> Home </Link></li>
               <li><Link to={'/personel'} className="nav-link">Personel</Link></li>
               <li><Link to={'/przychodnia'} className="nav-link">Przychodnia</Link></li>
             </ul>
-          </nav>
-          <hr />
+          </nav> */}
+          <Menu/>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/personel' component={Staff} />

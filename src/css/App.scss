@@ -68,7 +68,7 @@ p.margined{
 
 a, a:link, a:visited, a:hover{
     text-decoration: none;
-    color: inherit !important;
+    color: inherit;
 }
 
 button:focus{
@@ -436,8 +436,7 @@ label{
 
 /*Navbar*/
 .navbar{
-    font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
 
     .nav-link:link, .nav-link:visited {
         text-decoration: none;
@@ -484,7 +483,7 @@ label{
 }
 
 .nav-item{
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 .nav-link{

@@ -4,7 +4,7 @@ import Section from './Section'
 
 function SectionNews() {
     return (
-        <Section name='news' paralax='true'>
+        <Section id='aktualnosci' name='news' paralax='true'>
             <Row>
                 <Col sm={5} className='paralax-content'>
                     <h2 className="paragraph-title-green">Aktualności</h2>
