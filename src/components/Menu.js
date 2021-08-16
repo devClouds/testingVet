@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from 'react'
-import { Nav, Navbar, NavDropdown, Toggle, Collapse, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
-import { AiOutlineHome } from 'react-icons/ai'
+import React, { useState } from 'react';
+import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 
-import LogoFlattImage from '../img/Red-Vet-Logo-Flatt.png'
+
+import LogoFlattImage from '../img/Red-Vet-Logo-Flatt.png';
 
 function Menu() {
 
     //Shrink nav on scroll
     const shrinkNav = () => {
         const distanceY = window.pageXOffset || document.documentElement.scrollTop,
-        shrinkOn = 200;
-        if (distanceY > shrinkOn){
+            shrinkOn = 200;
+        if (distanceY > shrinkOn) {
             setsmallerNav(true)
-          } 
-          else if (distanceY <= shrinkOn){
+        }
+        else if (distanceY <= shrinkOn) {
             setsmallerNav(false)
-          }
-        };
+        }
+    };
+
     const [smallerNav, setsmallerNav] = useState(false)
+
 
 
     //Mobile menu
@@ -29,7 +30,7 @@ function Menu() {
     const [dropdownMenu, setdropdownMenu] = useState(false)
 
     const showDropdown = (e) => {
-       let width = window.innerWidth;
+        let width = window.innerWidth;
         if (width >= 767) {
             setdropdownMenu(!dropdownMenu);
         }
@@ -38,19 +39,28 @@ function Menu() {
         setdropdownMenu(false);
     }
 
-    //show dropdown on click in mobile screen
+    //Show dropdown on click in mobile screen
     const [mobileDropdownMenu, setmobileDropdownMenu] = useState(false)
 
     const toggleMobileDropdown = (e) => {
         let width = window.innerWidth;
         if (width < 767) {
-        setmobileDropdownMenu(!mobileDropdownMenu)
+            setmobileDropdownMenu(!mobileDropdownMenu);
+        }
+    }
+
+    //Hide mobile dropdown when window gets resize bigger
+    const closeMobileDropdownOnResize = (e) => {
+        let width = window.innerWidth;
+        if (width >= 767) {
+            setmobileDropdownMenu(false);
+            console.log('changed')
         }
     }
 
 
     window.addEventListener('scroll', shrinkNav);
-
+    window.addEventListener('resize', closeMobileDropdownOnResize);
 
     return (
         <div className={`nav-wrapper start-header start-style fixed-top ${smallerNav ? 'smaller' : ''}`}>
