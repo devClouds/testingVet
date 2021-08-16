@@ -7,143 +7,53 @@ import LogoFlattImage from '../img/Red-Vet-Logo-Flatt.png'
 
 function Menu() {
 
+    //Shrink nav on scroll
     const shrinkNav = () => {
         const distanceY = window.pageXOffset || document.documentElement.scrollTop,
         shrinkOn = 200;
         if (distanceY > shrinkOn){
             setsmallerNav(true)
-            //console.log('act');
           } 
           else if (distanceY <= shrinkOn){
             setsmallerNav(false)
-            //console.log('noga');
           }
         };
-
-
-
-
     const [smallerNav, setsmallerNav] = useState(false)
 
-    
 
     //Mobile menu
     const [mobileMenu, toggleMobile] = useState(false);
+
 
     //Show dropdown on hover
     const [dropdownMenu, setdropdownMenu] = useState(false)
 
     const showDropdown = (e) => {
-       //let width = window.innerWidth;
-        //if (width > 767) {
+       let width = window.innerWidth;
+        if (width >= 767) {
             setdropdownMenu(!dropdownMenu);
-       // }
+        }
     }
     const hideDropdown = (e) => {
         setdropdownMenu(false);
     }
 
+    //show dropdown on click in mobile screen
+    const [mobileDropdownMenu, setmobileDropdownMenu] = useState(false)
+
+    const toggleMobileDropdown = (e) => {
+        let width = window.innerWidth;
+        if (width < 767) {
+        setmobileDropdownMenu(!mobileDropdownMenu)
+        }
+    }
+
+
     window.addEventListener('scroll', shrinkNav);
 
 
-
-    document.addEventListener('DOMContentLoaded', function () {
-
-
-        //var change = navbar.offsetTop;
-
-
-        //let scroll = navbar.offsetTop;
-
-        const toggleVisible = () => {
-            // if (window.pageYOffset > 15) {
-            //     navbar.classList.add("navbar-white");
-            //     navLogo.classList.remove("navbar-brand-logo-white");
-            //     alert('yes')
-
-            // } else {
-            //     navbar.classList.remove("navbar-white");
-            //     navLogo.classList.add("navbar-brand-logo-white");
-            // }
-            // var navbar = document.getElementById('nav-wrapper');
-            // if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            //     navbar.classList.remove('start-style').classList.add("scroll-on");
-            // } else {
-            //     navbar.classList.remove("scroll-on").classList.add('start-style');
-            //  }
-       }
-
-
-    });
-
-
     return (
-        // <div className='nav-wrapper fixed-top nav-start' id='nav-wrapper'>
-        //     <div className='container-fluid'>
-        //         <Nav
-        //             className="navbar navbar-expand-md"
-        //             id="nav-main">
-        //             <Navbar.Brand href="/">
-        //                 <img
-        //                     src={LogoFlattImage}
-        //                     alt="Logo Przychodni Red-Vet"
-        //                     className="navbar-brand-logo"
-        //                     id="nav-logo" />
-        //             </Navbar.Brand>
-        //             <button 
-        //                 className="navbar-toggler" 
-        //                 type="button" data-toggle="collapse" 
-        //                 data-target="#navbarNav" 
-        //                 aria-controls="navbarNav" 
-        //                 aria-expanded="false" 
-        //                 aria-label="Toggle navigation">
-        // 					<span className="navbar-toggler-icon"></span>
-        // 			</button>
-        //             <div 
-        //                 className=" collapse navbar-collapse justify-content-end"
-        //                 id="navbarNav">
-
-        //                 <ul className="navbar-nav mr-auto">
-        //                     {/* <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //                         <Nav.Link classname='nav-link' href={'/'} className="nav-link"><AiOutlineHome /></Nav.Link >
-        //                     </Nav.Item> */}
-        // <NavDropdown
-        //     title='O nas'
-        //     id='nav-dropdown'>
-        //     {/*show={showDropdownMenu}*/}
-        //     {/*} onMouseEnter={showDropdown}*/}
-        //     {/*} onMouseLeave={hideDropdown}*/}
-        //     <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //         <Nav.Link classname='nav-link' href={'/personel'} className="nav-link">Personel</Nav.Link >
-        //     </Nav.Item>
-        //     <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //         <Nav.Link classname='nav-link' href={'/przychodnia'} className="nav-link">Przychodnia</Nav.Link >
-        //     </Nav.Item>
-        // </NavDropdown>
-        // <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //     <Nav.Link classname='nav-link' href={'/przychodnia'} className="nav-link">Usługi</Nav.Link >
-        // </Nav.Item>
-        // <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //     <a classname='nav-link' href={'#sklep'} className="nav-link">Sklep</a >
-        // </Nav.Item>
-        // <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //     <Nav.Link classname='nav-link' href={'/aktualnosci'} className="nav-link">Aktualności</Nav.Link >
-        // </Nav.Item>
-        // <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //     <Nav.Link classname='nav-link' href={'#opinie'} className="nav-link">Opinie</Nav.Link >
-        // </Nav.Item>
-        // <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
-        //     <Nav.Link classname='nav-link' href={'#kontakt'} className="nav-link">Kontakt</Nav.Link >
-        // </Nav.Item>
-
-
-        //                 </ul>
-        //             </div>
-        //         </Nav>
-        //     </div>
-        // </div>
-        <div className={`nav-wrapper start-header start-style fixed-top 
-                ${smallerNav ? 'smaller' : ''}`}>
+        <div className={`nav-wrapper start-header start-style fixed-top ${smallerNav ? 'smaller' : ''}`}>
             <Navbar expand="md">
                 <Container fluid>
                     <Navbar.Brand href="/">
@@ -158,30 +68,32 @@ function Menu() {
                         onClick={() => toggleMobile(!mobileMenu)}
                         className={mobileMenu ? 'open' : 'close'} />
                     <Navbar.Collapse id="mobile-nav">
-                        <Nav className="ms-auto">
+                        <Nav className="ms-auto" as='ul'>
                             <NavDropdown
+                                as='li'
                                 title='O nas'
                                 id='nav-dropdown'
-                                className='ps-4 ps-md-0 ms-0 ms-md-4'
-                                show={dropdownMenu}
+                                className={`ps-4 ps-md-0 ms-0 ms-md-4 ${mobileDropdownMenu ? 'open' : ''}`}
+                                show={dropdownMenu || mobileDropdownMenu}
                                 onMouseEnter={showDropdown}
-                                onMouseLeave={hideDropdown}>
+                                onMouseLeave={hideDropdown}
+                                onClick={toggleMobileDropdown}>
                                 <NavDropdown.Item href={'/personel'} >Personel</NavDropdown.Item>
                                 <NavDropdown.Item href={'/przychodnia'} >Przychodnia </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
+                            <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <Nav.Link classname='nav-link' href={'/uslugi'} className="nav-link">Usługi</Nav.Link >
                             </Nav.Item>
-                            <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
+                            <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <a classname='nav-link' href={'#sklep'} className="nav-link">Sklep</a >
                             </Nav.Item>
-                            <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
+                            <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <Nav.Link classname='nav-link' href={'/aktualnosci'} className="nav-link">Aktualności</Nav.Link >
                             </Nav.Item>
-                            <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
+                            <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <Nav.Link classname='nav-link' href={'#opinie'} className="nav-link">Opinie</Nav.Link >
                             </Nav.Item>
-                            <Nav.Item className='ps-4 ps-md-0 ms-0 ms-md-4'>
+                            <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <Nav.Link classname='nav-link' href={'#kontakt'} className="nav-link">Kontakt</Nav.Link >
                             </Nav.Item>
                         </Nav>
