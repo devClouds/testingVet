@@ -15,13 +15,6 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <ul className="navbar-nav mr-auto">
-              <li><Link to={'/'} className="nav-link"> Home </Link></li>
-              <li><Link to={'/personel'} className="nav-link">Personel</Link></li>
-              <li><Link to={'/przychodnia'} className="nav-link">Przychodnia</Link></li>
-            </ul>
-          </nav> */}
           <Menu/>
           <Switch>
             <Route exact path='/' component={Home} />
