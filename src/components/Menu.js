@@ -7,9 +7,25 @@ import LogoFlattImage from '../img/Red-Vet-Logo-Flatt.png'
 
 function Menu() {
 
+    const shrinkNav = () => {
+        const distanceY = window.pageXOffset || document.documentElement.scrollTop,
+        shrinkOn = 200;
+        if (distanceY > shrinkOn){
+            setsmallerNav(true)
+            //console.log('act');
+          } 
+          else if (distanceY <= shrinkOn){
+            setsmallerNav(false)
+            //console.log('noga');
+          }
+        };
+
+
 
 
     const [smallerNav, setsmallerNav] = useState(false)
+
+    
 
     //Mobile menu
     const [mobileMenu, toggleMobile] = useState(false);
@@ -27,17 +43,12 @@ function Menu() {
         setdropdownMenu(false);
     }
 
-
+    window.addEventListener('scroll', shrinkNav);
 
 
 
     document.addEventListener('DOMContentLoaded', function () {
 
-
-        //var navbar = document.getElementById('nav-wrapper');
-
-
-        let navLogo = document.getElementById("nav-logo");
 
         //var change = navbar.offsetTop;
 
@@ -54,15 +65,15 @@ function Menu() {
             //     navbar.classList.remove("navbar-white");
             //     navLogo.classList.add("navbar-brand-logo-white");
             // }
-            var navbar = document.getElementById('nav-wrapper');
-            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-                navbar.classList.remove('start-style').classList.add("scroll-on");
-            } else {
-                navbar.classList.remove("scroll-on").classList.add('start-style');
-             }
+            // var navbar = document.getElementById('nav-wrapper');
+            // if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            //     navbar.classList.remove('start-style').classList.add("scroll-on");
+            // } else {
+            //     navbar.classList.remove("scroll-on").classList.add('start-style');
+            //  }
        }
 
-       window.addEventListener('scroll', toggleVisible);
+
     });
 
 
@@ -131,7 +142,8 @@ function Menu() {
         //         </Nav>
         //     </div>
         // </div>
-        <div className='nav-wrapper start-header start-style fixed-top'>
+        <div className={`nav-wrapper start-header start-style fixed-top 
+                ${smallerNav ? 'smaller' : ''}`}>
             <Navbar expand="md">
                 <Container fluid>
                     <Navbar.Brand href="/">
