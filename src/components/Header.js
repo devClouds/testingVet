@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
         return (
@@ -7,7 +8,7 @@ function Header() {
                     <div>
                         <p className="sub-header-text animation-top">Przychodnia weterynaryjna w Głuszycy</p>
                         <p className="header-text animation-top"> Red - Vet</p>
-                        <a href='#contact' className="button-small animation-top">Skontaktuj się z nami</a>
+                        <HashLink to='/#kontakt' className="button-small animation-top">Skontaktuj się z nami</HashLink>
                     </div>
                 </div>
             </section>

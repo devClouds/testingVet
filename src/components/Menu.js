@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 
 
 import LogoFlattImage from '../img/Red-Vet-Logo-Flatt.png';
@@ -92,7 +92,7 @@ function Menu() {
                                 <NavDropdown.Item href={'/przychodnia'} >Przychodnia </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <Nav.Link classname='nav-link' href={'/#uslugi'} className="nav-link">Usługi</Nav.Link >
+                                <Nav.Link classname='nav-link anchor' href={'/#uslugi'} className="nav-link">Usługi</Nav.Link >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <Nav.Link classname='nav-link' href={'/sklep'} className="nav-link">Sklep</Nav.Link>
