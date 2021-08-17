@@ -390,11 +390,34 @@ label{
 .reviews-wrapper{
     background-image: url(../img/Reviews-10-BG.jpg);
     padding: 90px 0px;
+}
 
+.BrainhubCarouselItem{
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    margin: 0px 20px;
+}
+
+blockquote{
+    padding: 0px 40px 0px 0px;
+    
     p{
-        text-align: justify;
+        font-weight: 500;
     }
 }
+
+.cite{
+    font-size: .8rem;
+    font-style: italic
+}
+
+.cite-mark{
+    font-size: 1.4rem;
+    color: #dc3e67;
+    margin-bottom: 15px;
+}
+
+
 
 /*------------------------------------*/
 
