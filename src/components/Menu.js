@@ -56,7 +56,6 @@ function Menu() {
         let width = window.innerWidth;
         if (width >= 767) {
             setmobileDropdownMenu(false);
-            console.log('changed')
         }
     }
 
