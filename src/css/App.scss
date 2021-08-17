@@ -25,11 +25,12 @@ Title section - jako komponent?
 //@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 $font-QS: 'Quicksand', sans-serif;
 $font-Exo: 'Exo 2', sans-serif;
 $font-Lato: 'Lato', sans-serif;
+$font-Poppins: 'Poppins', sans-serif;
 
 $color-turcus-dark: #17ae92;
 $color-turcus-bright: #5DBCD2;
@@ -609,6 +610,7 @@ body{
 
 
 .nav-wrapper{
+    font-family: $font-Poppins;
     background-color: #ffff;
     padding: 15px 0px;
     transform: translateY(0);
@@ -687,7 +689,8 @@ body{
     .nav-link{
         transition: all 200ms linear;
     }
-    .nav-item:hover .nav-link{
+    .nav-item:hover .nav-link,
+    .nav-item .active{
         color: $color-turcus-dark !important;
     }
 
@@ -696,17 +699,7 @@ body{
         padding: 5px 0 !important;
         display: inline-block;
     }
-    .nav-item:after{
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        content: '';
-        background-color: $color-turcus-dark;
-        opacity: 0;
-        transition: all 200ms linear;
-    }
+
     .nav-item:hover:after{
         bottom: 0;
         opacity: 1;
