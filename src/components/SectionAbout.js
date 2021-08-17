@@ -17,14 +17,14 @@ function SectionAbout() {
             <Row>
                 <Col md={6} >
                     <a className='h3-link' href='/przychodnia'>
-                        <img className='img-size img-fluid' src={buildingImage} alt='Widok frontu przychodni' />
+                        <img className='img-size' src={buildingImage} alt='Widok frontu przychodni' />
                         <h3 className='text-center text-md-start'>Placówka</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo</p>
                     </a>
                 </Col>
                 <Col md={6} >
                     <a className='h3-link' href='/personel'>
-                        <img className='img-size img-fluid' src={staffImage} alt='Zdjęcie przedstawiające Annę Redlicką - właścicielkę' />
+                        <img className='img-size' src={staffImage} alt='Zdjęcie przedstawiające Annę Redlicką - właścicielkę' />
                         <h3 className='text-center text-md-start'>Personel</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo</p>
                     </a>
