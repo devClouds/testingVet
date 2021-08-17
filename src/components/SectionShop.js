@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 
 function SectionShop() {
     return (
-        <Section name="shop" paralax='true'>
+        <Section id='sklep' name="shop" paralax='true'>
             <Row className='justify-content-end'>
                 <Col sm={5} className='paralax-content'>
                     <h2 className="paragraph-title-green">Sklep</h2>

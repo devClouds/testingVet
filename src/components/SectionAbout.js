@@ -8,7 +8,7 @@ import staffImage from '../img/About-Photo.jpg'
 
 function SectionAbout() {
     return (
-        <Section name='about'>
+        <Section id='o-nas' name='about'>
             <div className='justify-content-center text-center'>
                 <h2 className="paragraph-title-green">Red-Vet - przychodnia dla każdego</h2>
                 <p className='margined'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo. Aenean lacinia, nunc nec euismod tincidunt, velit neque hendrerit urna, ac tempor lorem ex quis ex.

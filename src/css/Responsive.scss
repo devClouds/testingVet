@@ -52,6 +52,64 @@
         .navbar-brand-logo{
             width: 200px;
         }
+
+
+
+        .nav-item:after{
+            display: none;
+        }
+        .nav-item::before {
+            position: absolute;
+            display: block;
+            top: 18px;
+            left: 0;
+            width: 14px;
+            height: 1px;
+            content: "";
+            border: none;
+            background-color: #000;
+        }
+        .dropdown-toggle::after {
+            position: absolute;
+            display: block;
+            top: 12px;
+            left: -25px;
+            width: 1px;
+            height: 14px;
+            content: "";
+            border: none;
+            background-color: #000;
+            transition: all 200ms linear;
+        }
+        .dropdown-toggle[aria-expanded="true"]::after{
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+        .dropdown-menu {
+            padding: 0 !important;
+            background-color: transparent;
+            box-shadow: none;
+            transition: all 200ms linear;
+        }
+        .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+            margin-top: 10px !important;
+            margin-bottom: 20px !important;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 }

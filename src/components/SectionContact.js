@@ -9,9 +9,9 @@ import PhoneIcon from '../img/icons/phone.png'
 
 function SectionContact() {
     return (
-        <Section name='contact'>
+        <Section id='kontakt' name='contact'>
             <div className='justify-content-center text-center'>
-                <h2 className="paragraph-title-green">Kontakt</h2>
+                <h2 className="paragraph-title-green anchor">Kontakt</h2>
             </div>
             <Row>
                 <Col md={6} className='mb-4 mb-md-0'>

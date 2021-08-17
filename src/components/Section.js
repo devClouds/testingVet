@@ -6,7 +6,7 @@ function Section(props) {
     const paralax = (props.paralax !== undefined ? 'paralax' : '');
 
     return (
-        <section id={props.name}>
+        <section id={props.id}>
             <div className={`${props.name + '-wrapper'} ${paralax}`}>
                 <Container>
                     {props.children}
