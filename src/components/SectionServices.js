@@ -1,8 +1,8 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import Section from './Section'
-import Service
-    from './Service'
+import Service from './Service'
+import SectionTitle from './SectionTitle'
 
 
 import SyringeImage from '../img/services/syringe.svg'
@@ -14,18 +14,19 @@ import MicroscopeImage from '../img/services/microscope.svg'
 import ScrissorsImage from '../img/services/scrissors.svg'
 import BeforeImage from '../img/services/before.svg'
 
+import Fade from 'react-reveal/Fade'
+
 function SectionServices() {
     return (
         <Section id='uslugi' name='services'>
             <div className='justify-content-center text-center'>
-                <h2 className="paragraph-title-green anchor">Nasze usługi</h2>
-                <p className='margined'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo. Aenean lacinia, nunc nec euismod tincidunt, velit neque hendrerit urna, ac tempor lorem ex quis ex.
-                </p>
+                <SectionTitle title='Nasze usługi' />
+                <Fade bottom>
+                    <p className='margined'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo. Aenean lacinia, nunc nec euismod tincidunt, velit neque hendrerit urna, ac tempor lorem ex quis ex.</p>
+                </Fade>
             </div>
             <Row className='justify-content-center'>
                 <Service
-
-
                     title='Szczepienia'
                     imagePath={SyringeImage} >
 

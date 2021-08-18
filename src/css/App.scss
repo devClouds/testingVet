@@ -1,21 +1,21 @@
 //!!1. do wrapperów zrobić mixin z paddingiem stałym i kolorem do wyboru?
-//2. Przygotować menu
-//3. Przygotować sekcję komentarzy
-//4. Zanimować elementy dodatkowe
+//!!2. Przygotować menu
+//!!3. Przygotować sekcję komentarzy
+//!!4. Zanimować elementy dodatkowe
 //5. ScrollSpy dołączyć ??
-//6. Dodać footer
+//!!6. Dodać footer
 
 /* Do zrobienia/rozważenia
 
 !!1) Czcionka większa?
 2) messenger podpiąć?
-3) Efekty animowania rzeczy
-4) Ikonka home w menu?
+!!3) Efekty animowania rzeczy
+--4) Ikonka home w menu?
 !!5) Zmniejszać czcionkę h3? na mniejszych ekranach
-6) Czy ustalić wysokość service card na min 307px na większych ekranach?
+!!6) Czy ustalić wysokość service card na min 307px na większych ekranach?
 !!7) Dodać marginesy w p na małych ekranach lub padding
 8) Wyłaczyć zamykanie się modal services po kliknięciu w innej miejsce niż button lub poza modal
-9) Wycentrować tekst w paralaxach na malych ekranach
+!!9) Wycentrować tekst w paralaxach na malych ekranach
 
 
 Title section - jako komponent?
@@ -25,7 +25,9 @@ Title section - jako komponent?
 //@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
 
 $font-QS: 'Quicksand', sans-serif;
 $font-Exo: 'Exo 2', sans-serif;
@@ -44,10 +46,9 @@ $color-orange: #F9A13D;
 /*General*/
 html, body{
     background-color: #ffff;
+
     color: #000;
- //   font-family: $font-QS;
     font-size: 18px;
-    font-weight: 300;
     margin: 0;
     margin-top: 0px !important;
     width: 100%;
@@ -76,11 +77,13 @@ button:focus{
     outline: none;
 }
 
+
+
 h3{
     color: $color-turcus-bright;
     border-bottom: 2px solid $color-turcus-bright;
-    padding: 10px 0px;
-    
+    padding: 10px 0px;   
+    transition: .5s ease-in-out;
 }
 
 .paralax{
@@ -141,9 +144,11 @@ h3{
             background-color: $color-turcus-bright;
         }
 }
+
 //Allow for anchor tags to be applied with margin
 section{
     scroll-margin-top: 3rem;
+    //font-family: $font-Poppins;
 }
 /*------------------------------------*/
 
@@ -216,6 +221,7 @@ section{
 .h3-link:hover{
     h3{
         color: $color-turcus-dark;
+        border-bottom: 2px solid $color-turcus-dark;
     }
 }
 
@@ -254,7 +260,6 @@ section{
         cursor: pointer;
 
         .services-box-icon img{
-            //animation: spin .5s;
             animation: bounce 1s ease;
         }
 
@@ -268,7 +273,7 @@ section{
 }
 
     .services-box-content{
-        padding: 1em .5em 2em .5em;
+        padding: 1em .5em 3em .5em;
         
         --initialTextColor: #000                ;
         --slideTextColor: #FFF;
@@ -380,6 +385,10 @@ label{
 .icon{
     max-height: 1.5em;
     margin-right: 1em;
+}
+
+#google-map{
+    min-height: 400px;
 }
 
 /*------------------------------------*/
@@ -625,13 +634,13 @@ body{
         }
 }
 
-.anchor::before{
-    content: "";
-    display: block;
-    position: absolute;
-    padding-top: 232px;
-    margin-top: -232px;
-}
+// .anchor::before{
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     padding-top: 232px;
+//     margin-top: -232px;
+// }
 
 
 
