@@ -12,12 +12,12 @@ function Header() {
                 <div>
                     <Slide top cascade>
                         <div>
-                            <p className="sub-header-text animation-top">Przychodnia weterynaryjna w Głuszycy</p>
-                            <p className="header-text animation-top"> Red - Vet</p>
+                            <p className="sub-header-text">Przychodnia weterynaryjna w Głuszycy</p>
+                            <p className="header-text"> Red - Vet</p>
                         </div>
                     </Slide>
                     <Fade bottom>
-                        <HashLink to='/#kontakt' className="button-small animation-top">Skontaktuj się z nami</HashLink>
+                        <HashLink to='/#kontakt' className="button-small">Skontaktuj się z nami</HashLink>
                     </Fade>
 
                 </div>

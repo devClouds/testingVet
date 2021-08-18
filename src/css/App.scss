@@ -161,20 +161,17 @@ section{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 
-.overlay{
-    background: rgba(23, 174, 146, 0.5);
-    overflow: hidden;
-    height: 100%;
-    z-index: 2;
-}
+// .overlay{
+//     background: rgba(23, 174, 146, 0.5);
+//     overflow: hidden;
+//     height: 100%;
+//     z-index: 2;
+// }
 
 .sub-header-text{
     font-size: 40px;
-    //font-family: 'Uni-Sans-Thin'; 
-    //font-family: $font-Exo;
     color: #fff;
     margin-bottom: 0px !important; 
     text-shadow: 3px 3px 5px #000;
@@ -182,9 +179,6 @@ section{
 
 .header-text{
     font-size: 70px;
-    //font-weight: bold;
-    //font-family: 'Uni-Sans-Heavy';
-    //font-family: $font-Exo;
     color: #fff;
     text-transform: uppercase;
     margin-top: 5px !important;
@@ -195,15 +189,25 @@ section{
 
 
 /*Header-subpages*/
-.header-aktualnosci-wrapper{
-    background: url(../img/News-2-BG.jpg) no-repeat;
-    min-height: 300px;
-    background-size: 100% 100%;
+// .header-aktualnosci-wrapper{
+//     background: url(../img/News-2-BG.jpg) no-repeat;
+//     min-height: 300px;
+//     background-size: 100% 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+.header-subpage-wrapper{
+    background: url(../img/Head-Photo-BG-mask.png) no-repeat center center fixed;
+    background-size: cover; 
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    text-align: center;
 }
+
 
 
 
