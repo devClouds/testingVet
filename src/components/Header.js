@@ -1,18 +1,30 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link';
+import Slide from 'react-reveal/Slide'
+import Fade from 'react-reveal/Fade'
+
+
 
 function Header() {
-        return (
-            <section id="header">
-                <div className='header-wrapper'>
-                    <div>
-                        <p className="sub-header-text animation-top">Przychodnia weterynaryjna w Głuszycy</p>
-                        <p className="header-text animation-top"> Red - Vet</p>
+    return (
+        <section id="header">
+            <div className='header-wrapper'>
+                <div>
+                    <Slide top cascade>
+                        <div>
+                            <p className="sub-header-text animation-top">Przychodnia weterynaryjna w Głuszycy</p>
+                            <p className="header-text animation-top"> Red - Vet</p>
+                        </div>
+
+                    </Slide>
+                    <Fade big>
                         <HashLink to='/#kontakt' className="button-small animation-top">Skontaktuj się z nami</HashLink>
-                    </div>
+                    </Fade>
+
                 </div>
-            </section>
-        )
+            </div>
+        </section>
+    )
 }
 
 export default Header

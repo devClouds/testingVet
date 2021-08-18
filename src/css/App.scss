@@ -254,7 +254,6 @@ section{
         cursor: pointer;
 
         .services-box-icon img{
-            //animation: spin .5s;
             animation: bounce 1s ease;
         }
 
@@ -268,7 +267,7 @@ section{
 }
 
     .services-box-content{
-        padding: 1em .5em 2em .5em;
+        padding: 1em .5em 3em .5em;
         
         --initialTextColor: #000                ;
         --slideTextColor: #FFF;
@@ -380,6 +379,10 @@ label{
 .icon{
     max-height: 1.5em;
     margin-right: 1em;
+}
+
+#google-map{
+    min-height: 400px;
 }
 
 /*------------------------------------*/
@@ -625,13 +628,13 @@ body{
         }
 }
 
-.anchor::before{
-    content: "";
-    display: block;
-    position: absolute;
-    padding-top: 232px;
-    margin-top: -232px;
-}
+// .anchor::before{
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     padding-top: 232px;
+//     margin-top: -232px;
+// }
 
 
 

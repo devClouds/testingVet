@@ -1,3 +1,10 @@
+@media screen and (min-width:992px) {
+    .services-box-content{
+        height: 120px;
+    }
+}
+
+
 @media screen and (min-width:768px) {
     .img-size{
         width: 100%;
@@ -160,7 +167,7 @@
         }
 
         .services-box-content{
-            padding: .5em;
+            height: 75px;
         }
         .services-box-icon {
             padding: 1em;
@@ -170,6 +177,10 @@
                 margin-bottom: .5rem;
             }
 
+        }
+
+        blockquote{
+            padding: 0px;
         }
     }
  
