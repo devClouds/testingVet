@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row, Accordion } from 'react-bootstrap'
 import Section from './Section'
 import SectionTitle from './SectionTitle'
 
@@ -14,7 +14,8 @@ function SectionNews() {
                     <Fade bottom>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo</p>
                     <a href='/aktualnosci' className='button-small mt-3'>Przejdź do aktualności</a>
-                    </Fade>
+                    </Fade>         
+                  
                 </Col>
             </Row>
         </Section>

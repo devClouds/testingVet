@@ -1,16 +1,16 @@
 import React from 'react'
-import Header from '../components/Header'
-import MainNews from '../components/MainNews'
+import SectionStaffSubpage from '../components/SectionStaffSubpage'
 import Footer from '../components/Footer'
+import HeaderSubpage from '../components/HeaderSubpage'
 
-function Home() {
+function Staff() {
     return (
         <>
-            <Header/>
-            <MainNews/>
+            <HeaderSubpage title='Personel'/>
+            <SectionStaffSubpage/>
             <Footer/>
         </>
     )
 }
 
-export default Home
+export default Staff

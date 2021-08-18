@@ -647,6 +647,33 @@ body{
 // }
 
 
+// /*Subpages*/
+.subpage-wrapper{
+    @include wrapper($color-gray-bright);
+}
+
+
+.card{
+    padding: 15px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.img-about{
+    //height: 250px;
+    max-width: 100%;
+    //max-height: 300px;
+}
+
+
+
+
+
+
+
+
 
 
  //animations
