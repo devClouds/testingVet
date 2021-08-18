@@ -20,7 +20,7 @@ function SectionAbout() {
 
             </div>
             <Row>
-                <Col md={6} >
+                <Col md={6} className='text-center text-md-start' >
                     <Bounce left>
                         <div>
                             <a className='h3-link' href='/przychodnia'>
@@ -32,7 +32,7 @@ function SectionAbout() {
 
                     </Bounce >
                 </Col>
-                <Col md={6} >
+                <Col md={6} className='text-center text-md-start' >
                     <Bounce right>
                         <div>
                             <a className='h3-link' href='/personel'>

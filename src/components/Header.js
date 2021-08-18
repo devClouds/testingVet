@@ -15,9 +15,8 @@ function Header() {
                             <p className="sub-header-text animation-top">Przychodnia weterynaryjna w Głuszycy</p>
                             <p className="header-text animation-top"> Red - Vet</p>
                         </div>
-
                     </Slide>
-                    <Fade big>
+                    <Fade bottom>
                         <HashLink to='/#kontakt' className="button-small animation-top">Skontaktuj się z nami</HashLink>
                     </Fade>
 
