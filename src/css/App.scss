@@ -668,11 +668,24 @@ body{
 }
 
 
+//Building
+.building-introduction-wrapper {
+    @include wrapper(#fff);
+}
 
+.building-history-wrapper{
+    background-image: url(../img/Building-History.jpg);
+    padding: 90px 0px;
+    color:white;
+}
 
+.building-overview-wrapper{
+    @include wrapper($color-gray-bright);
+}
 
-
-
+.building-schedule-wrapper{
+    @include wrapper(#fff);
+}
 
 
 
