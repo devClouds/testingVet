@@ -15,8 +15,8 @@ function SectionBuildingIntroduction() {
             <div className='justify-content-center text-center'>
                 <SectionTitle title='Czym się zajmujemy?' />
                 <Fade bottom>
-                    <p className='margined'>Przychodnia weterynaryjna Red-Vet to zlokalizowana w centrum Głuszycy placówka, w której realizowane są usługi weterynaryjne dla szerokiego spektrum zwierząt. Najczęściej trafiają do nas oczywiście małe zwierzęta domowe: koty, psy, ptaki, zółwie czy świnki morskie. Z racji na to, iż nasza przychodnia współpracuje także z okolicznymi gminami zdarza się jednak, że w naszych progach pojawiają sie bardziej osobliwi goście jak choćby sarny, dziki, bociany, a nawet wilk.</p>
-                    <p>Niezależnie jednak od tego czy mamy do czynienia ze spokojnym kotkiem czy też dziką sarną zawsze staramy się realizować nasz nadrzędny cel - nieść pomoc medyczną tym zwierzętom, które tego potrzebują.</p>
+                    <p className='margined'>W Red-Vet świadczymy usługi weterynaryjne zwierzętom wszelkiej maści. W większości przypadków zjawiają sie u nas oczywiście mniejsze lub większe zwierzęta towarzyszące takie jak: koty, psy, ptaki, zółwie czy świnki morskie, którym towarzyszą ich troskliwi właściciele. Nasza placówka współpracuje jednak również z lokalnymi samorządami zapewniając opiekę medyczną dzikim zwierzętom, które z różnych powodów mogą takiej opieki potrzebować. Nie dziwią nas zatem wezwania do rannych saren, jeży, szopów, dzików, a nawet wilków</p> 
+                    <p>Niezależnie od pochodzenia, gabarytów i usposobienia zwierzęcia staramy się jednak przede wszystkim leczyć, ale także doradzać i uświadamić właścicieli w kwestiach opieki i wychowania ich pupili. Lubimy swoją pracę i cieszymy się mogąc pomagać innym.</p>
                 </Fade>
 
             </div>
