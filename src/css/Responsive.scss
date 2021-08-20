@@ -36,7 +36,7 @@
 
     body{
 
-        p,.button, td, .button-small{
+        p,.button, td, .button-small, .card-title h5{
             font-size: 16px;
         }
     
@@ -117,9 +117,9 @@
             margin-bottom: 20px !important;
         }
 
-        .BrainhubCarouselItem{
-            justify-content: center;
-        }
+        // .BrainhubCarouselItem{
+        //     justify-content: center;
+        // }
 
     }
 
@@ -193,6 +193,10 @@
 
         blockquote{
             padding: 0px 20px 0px 20px;
+        }
+
+        .card-text{
+            max-height: 100px !important;
         }
     }
  
