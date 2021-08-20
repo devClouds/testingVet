@@ -666,7 +666,7 @@ body{
 }
 
 .building-history-wrapper{
-    background-image: url(../img/Building-History.jpg);
+    background-image: url(../img/Building-History-5.jpg);
     padding: 90px 0px;
     color:white;
 }
@@ -677,6 +677,17 @@ body{
 
 .building-schedule-wrapper{
     @include wrapper(#fff);
+}
+
+.building-carousel-img{
+    height: 60vw;
+    width: 100%;
+}
+
+.building-carousel-thumbnail
+{
+    width: 50px;
+    height: 35px;
 }
 
 //News

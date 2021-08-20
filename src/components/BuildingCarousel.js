@@ -14,14 +14,20 @@ class BuildingCarousel extends React.Component {
         this.state = {
             value: 0,
             slides: [
-                (<img src={BuildingImageOne} />),
-                (<img src={BuildingImageTwo} />),
-                (<img src={BuildingImageThree} />),
+                (<img className='building-carousel-img' src={BuildingImageOne} />),
+                (<img className='building-carousel-img' src={BuildingImageTwo} />),
+                (<img className='building-carousel-img' src={BuildingImageThree} />),
+                (<img className='building-carousel-img' src={BuildingImageThree} />),
+                (<img className='building-carousel-img' src={BuildingImageThree} />),
+                (<img className='building-carousel-img' src={BuildingImageThree} />),
             ],
             thumbnails: [
-                (<img src={BuildingImageOne} />),
-                (<img src={BuildingImageTwo} />),
-                (<img src={BuildingImageThree} />),
+                (<img className='building-carousel-thumbnail'src={BuildingImageOne} />),
+                (<img className='building-carousel-thumbnail'src={BuildingImageTwo} />),
+                (<img className='building-carousel-thumbnail'src={BuildingImageThree} />),
+                (<img className='building-carousel-thumbnail'src={BuildingImageThree} />),
+                (<img className='building-carousel-thumbnail'src={BuildingImageThree} />),
+                (<img className='building-carousel-thumbnail'src={BuildingImageThree} />),
             ],
         }
         this.onchange = this.onchange.bind(this);
@@ -38,6 +44,14 @@ class BuildingCarousel extends React.Component {
               value={this.state.value}
               slides={this.state.slides}
               onChange={this.onchange}
+              plugins={
+                ['infinite',{
+                  resolve: autoplayPlugin,
+                  options: {
+                      interval: 5000}
+                  }
+               ]}
+              animationSpeed={2000}
             />
             <Dots number={this.state.thumbnails.length} thumbnails={this.state.thumbnails} value={this.state.value} onChange={this.onchange} number={this.state.slides.length} />
           </div>

@@ -1,10 +1,10 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Table } from 'react-bootstrap'
 import Section from './Section'
 
 import SectionTitle from './SectionTitle'
 
-import Bounce from 'react-reveal/Bounce';
+import Flip from 'react-reveal/Flip'
 import Fade from 'react-reveal/Fade'
 
 function SectionBuildingSchedule() {
@@ -13,9 +13,48 @@ function SectionBuildingSchedule() {
             <div className='justify-content-center text-center'>
                 <SectionTitle title='Jak pracujemy' />
                 <Fade bottom>
-                    <p className='margined'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo. Aenean lacinia, nunc nec euismod tincidunt, velit neque hendrerit urna, ac tempor lorem ex quis ex.</p>
+                    <p className='margined'>Nasza przychodnia jest czynna dla klientów w następujących dniach tygodnia:</p>
                 </Fade>
-
+                <Flip bottom>
+                    <Table className='contact-table mb-4' striped bordered hover size='sm'>
+                        <tbody>
+                            <tr>
+                                <td>Poniedziałek:</td>
+                                <td>10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Wtorek:</td>
+                                <td>10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Środa:</td>
+                                <td>10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Czwartek:</td>
+                                <td>10:00 - 16:00</td>
+                            </tr>
+                            <tr>
+                                <td>Piątek:</td>
+                                <td>10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sobota:</td>
+                                <td>10:00 - 13:00</td>
+                            </tr>
+                            <tr>
+                                <td>Niedziela:</td>
+                                <td>nieczynne</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </Flip>
+                <div class="alert alert-danger" role="alert">
+                <Fade bottom>
+                        <p>W pilnych przypadkach umożliwiamy także wizytę poza standardowymi godzinami pracy. W takich przypadkach prosimy jednakże o wcześniejsze umówienie takiej wizyty na miejscu, telefonicznie lub mailowo.</p>
+                        <p>Na tych samych zasadach realizujemy także wizyty domowe u naszych klientów.</p>
+                </Fade>
+                </div>
             </div>
         </Section>
     )
