@@ -1,4 +1,3 @@
-//import { Modal, Button } from 'bootstrap'
 import React from 'react'
 import { Modal } from 'react-bootstrap'
 
@@ -13,7 +12,7 @@ function NewsModal(props) {
         >
             <Modal.Header
             >
-                <img className='img-modal img-fluid' src={props.imagePath} alt={props.alt} />
+                <img className='img-modal img-fluid' src={`../images/news/${props.imagePath}`} alt={props.alt} />
                 <h3>{props.title}</h3>
                 <p>{props.date}</p>
             </Modal.Header>
