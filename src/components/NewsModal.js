@@ -1,7 +1,8 @@
+//import { Modal, Button } from 'bootstrap'
 import React from 'react'
-import { Modal  } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 
-function ServiceModal(props) {
+function NewsModal(props) {
 
     return (
         <Modal
@@ -12,13 +13,14 @@ function ServiceModal(props) {
         >
             <Modal.Header
             >
-                <img className='services-modal-img img-fluid' src={props.imagePath} alt={props.alt} />
+                <img className='img-modal img-fluid' src={props.imagePath} alt={props.alt} />
                 <h3>{props.title}</h3>
+                <p>{props.date}</p>
             </Modal.Header>
             <Modal.Body
                 className='mb-5 px-sm-5'>
                 <p className='text-muted'>
-                    {props.children}
+                    {props.text}
                 </p>
                 <button className='button-small mt-4 px-sm-5'>Zamknij</button>
             </Modal.Body>
@@ -26,4 +28,4 @@ function ServiceModal(props) {
     )
 }
 
-export default ServiceModal
+export default NewsModal

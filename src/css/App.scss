@@ -317,7 +317,7 @@ section{
         }
     }
 
-    .img-modal{
+    .services-modal-img{
         width: 7rem;
         padding: 2em 0 1em 0 ;
     }
@@ -697,15 +697,20 @@ body{
         font-size: inherit;
         height: 3.8em;
         margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
      
     .card-image{
-        max-width: 70%;
-        padding: 1em;
+        //max-width: 70%;
+        padding: 1em 1em 0em 1em;
         margin: auto;
+
     }
 
     .card-body{
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         padding: 1rem 1em 2rem 1rem;
@@ -713,12 +718,9 @@ body{
 
     .card-text{
         display: -webkit-box;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        //text-overflow: ellipsis;
-        
-
     }
 
 
@@ -731,9 +733,11 @@ body{
     .card-read-more{
         font-size: 0.8rem;
         text-align: right;
-        &:hover{
+
+        a:hover{
+            cursor: pointer;
             transition: .5s ease-in-out;
-            color:#17ae92;
+            color:#17ae92 !important;
         }
     }
 }
