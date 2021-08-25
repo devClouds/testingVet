@@ -2,8 +2,7 @@ import React from 'react'
 import { Row } from 'react-bootstrap'
 import Section from './Section'
 
-import News from './News';
-import NewsList from '../json/News.json'
+import ProductsList from '../json/Products.json'
 
 import SectionTitle from './SectionTitle'
 import Fade from 'react-reveal/Fade'
@@ -20,7 +19,7 @@ function SectionShopProducts() {
             </div>
             <Row>
 
-                {NewsList.map((news, key) => {
+                {ProductsList.map((news, key) => {
                     return <Product
                         key={key}
                         title={news.title}
