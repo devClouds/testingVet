@@ -307,7 +307,8 @@ section{
     }
 
     .services-modal{
-        padding-right: 0px !important;
+        //padding-right: 0px !important;
+        padding: 0px !important;
 
 
         .modal-header{
@@ -746,6 +747,10 @@ body{
     }
 }
 
+.news-modal-img{
+    //max-height: 100vw;
+    max-height: 400px;
+}
 
 
 

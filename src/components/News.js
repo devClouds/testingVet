@@ -20,7 +20,7 @@ function News(props) {
                     <Card.Title>{props.title}</Card.Title>
                     <p className='card-date'>{props.date}</p>
                     <Card.Text>
-                        {props.text}
+                    <p className='text-muted' dangerouslySetInnerHTML={ {__html: props.text} } ></p>
                     </Card.Text>
                     <div className='card-read-more'>
                         <a >Czytaj więcej {'>'}</a>
