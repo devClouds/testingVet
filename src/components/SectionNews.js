@@ -14,7 +14,8 @@ function SectionNews() {
                 <Col sm={5} className='paralax-content'>
                     <SectionTitle title='Aktualności' />
                     <Fade bottom>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo</p>
+                        <p>Chcesz dowiedzieć się co u nas nowego? Upewnić się czy jesteśmy dzisiaj otwarci. Poznać zwierzaki, które się u nas pojawiają? Przeczytać nieco ciekawych informacji ze świata weterynarii oraz dbania o zwierzęta. To wszystko oraz znacznie więcej odnajdziesz w tej sekcji</p>
+                        <p>Staramy się na bieżąco publikować wszystkie istotne informacje dlatego zachęcamy do zaglądania do sekcji aktualności, by niczego nie przegapić.</p>
                         <a href='/aktualnosci' className='button-small mt-3'>Przejdź do aktualności</a>
                     </Fade>
                 </Col>

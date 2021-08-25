@@ -27,7 +27,7 @@ function SectionAbout() {
                             <a className='h3-link' href='/przychodnia'>
                                 <img className='img-size' src={buildingImage} alt='Widok frontu przychodni' />
                                 <h3 className='text-center text-md-start'>Przychodnia</h3>
-                                <p>W dobrych warunkach łatwiej dochodzić do zdrowia - zapraszamy zatem do krótkiej wycieczki po naszej przychodni w trakcie, której zapoznają sie Państwo z jej historią, działalnością oraz samym wyglądem. Ważne dla nas jest byście wiedzieli Państwo do jakiego miejsca oddajecie swych pupili.</p>
+                                <p>W dobrych warunkach łatwiej dochodzić do zdrowia - zapraszamy zatem do krótkiej wycieczki po naszej przychodni w trakcie, której zapoznacie się z jej historią, działalnością oraz samym wyglądem. Ważne dla nas jest byście wiedzieli Państwo do jakiego miejsca oddajecie swych pupili.</p>
                             </a>
                         </div>
 
