@@ -92,19 +92,22 @@ function Menu() {
                                 <NavDropdown.Item href={'/przychodnia'} >Przychodnia </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink classname='nav-link' to={'/#uslugi'} className="nav-link">Usługi</NavHashLink >
+                                <NavHashLink 
+                                    classname='nav-link' 
+                                    to={'/#uslugi'} 
+                                    onClick={() => toggleMobile(false)}>Usługi</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavLink classname='nav-link' to={'/sklep'} className="nav-link">Sklep</NavLink>
+                                <NavLink classname='nav-link' to={'/sklep'} >Sklep</NavLink>
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavLink classname='nav-link' to={'/aktualnosci'} className="nav-link">Aktualności</NavLink >
+                                <NavLink classname='nav-link' to={'/aktualnosci'} >Aktualności</NavLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink classname='nav-link' to={'/#opinie'} className="nav-link">Opinie</NavHashLink >
+                                <NavHashLink classname='nav-link' to={'/#opinie'} >Opinie</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink classname='nav-link' to={'/#kontakt'} className="nav-link">Kontakt</NavHashLink >
+                                <NavHashLink classname='nav-link' to={'/#kontakt'} >Kontakt</NavHashLink >
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
