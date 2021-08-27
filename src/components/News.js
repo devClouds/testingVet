@@ -15,7 +15,6 @@ function News(props) {
     return (
         <div className='mb-4 col-lg-3 col-md-4 col-sm-6'>
             <Card className='news-card' onClick={openModal} >
-                {/* <Card.Img className='card-image' src={props.image} /> */}
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
                     <p className='card-date'>{props.date}</p>

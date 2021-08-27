@@ -145,7 +145,7 @@ section{
 
 /*Header*/
 .header-wrapper{
-    background: url(../img/Header-Photo-BG-Mask.png) no-repeat center center fixed;
+    background: url(../img/BG-Header.jpg) no-repeat center center fixed;
     background-size: cover; 
     height: 100vh;
     display: flex;
@@ -172,7 +172,7 @@ section{
 /*------------------------------------*/
 
 .header-subpage-wrapper{
-    background: url(../img/Header-Photo-BG-Mask.png) no-repeat center center fixed;
+    background: url(../img/BG-Header.jpg) no-repeat center center fixed;
     background-size: cover; 
     height: 50vh;
     display: flex;
@@ -198,7 +198,7 @@ section{
 /*News*/
 
 .news-wrapper{
-    background-image: url(../img/News-4-BG.jpg);
+    background-image: url(../img/BG-News.jpg);
     padding: 90px 0px;
 
     p{
@@ -289,7 +289,7 @@ section{
 /*Shop*/
 
 .shop-wrapper{
-    background-image: url(../img/Shop-4-BG.jpeg);
+    background-image: url(../img/BG-Shop.jpeg);
     padding: 90px 0px;
 }
 
@@ -356,7 +356,7 @@ label{
 /*Reviews*/
 
 .reviews-wrapper{
-    background-image: url(../img/Reviews-10-BG.jpg);
+    background-image: url(../img/BG-Reviews.jpg);
     padding: 90px 0px;
 }
 
@@ -613,7 +613,7 @@ body{
 }
 
 .building-history-wrapper{
-    background-image: url(../img/Building-History-5.jpg);
+    background-image: url(../img/BG-History.jpg);
     padding: 90px 0px;
     color:white;
 }

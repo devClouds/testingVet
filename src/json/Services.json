@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Szczepienia",
+        "imagePath": "Syringe.svg",
+        "alt": "Strzykawka",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Kastracja",
+        "imagePath": "Scrissors.svg",
+        "alt": "Nożyczki",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Chirurgia tkanek",
+        "imagePath": "Scalpel.svg",
+        "alt": "Skalpel",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Wizyty domowe",
+        "imagePath": "Syringe.svg",
+        "alt": "Samochód",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Paszport",
+        "imagePath": "Car.svg",
+        "alt": "Paszport",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Czipowanie",
+        "imagePath": "Chip.svg",
+        "alt": "Czip",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Profilaktyka",
+        "imagePath": "Prevention.svg",
+        "alt": "Serce z sygnałem EKG",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    },
+    {
+        "title": "Badania laboratoryjne",
+        "imagePath": "Microscope.svg",
+        "alt": "Mikroskop",
+        "text": "Szczepienia to jedna z naszych najważniejszych usług. Szczepimy przeciwko wszystkim rodzajom chorób - od tych śmiertelnych, poprzez zakaźne, a na lekkich  skończywszy.Śmiertelność zabiegu w naszej przychodni wynosi jedyne 30%."
+    }
+   
+]

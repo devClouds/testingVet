@@ -17,7 +17,7 @@ function Service(props) {
             <Flip bottom>
                 <div className='services-box' onClick={openModal}>
                     <div className="services-box-icon">
-                        <img className='' src={props.imagePath} />
+                        <img src={`../images/services/${props.imagePath}`} alt={props.alt}/>
                     </div>
                     <div className="services-box-content">
                         <h4>{props.title}</h4>
@@ -25,9 +25,8 @@ function Service(props) {
                             title={props.title}
                             imagePath={props.imagePath}
                             show={showModal}
-                        >
-                            {props.children}
-                        </ServiceModal>
+                            text={props.text}
+                        />
                     </div>
                 </div>
             </Flip>

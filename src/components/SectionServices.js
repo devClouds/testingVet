@@ -4,6 +4,8 @@ import Section from './Section'
 import Service from './Service'
 import SectionTitle from './SectionTitle'
 
+import ServicesList from '../json/Services.json'
+
 
 import SyringeImage from '../img/services/syringe.svg'
 import CarImage from '../img/services/car.svg'
@@ -13,6 +15,8 @@ import ScalpelImage from '../img/services/scalpel.svg'
 import MicroscopeImage from '../img/services/microscope.svg'
 import ScrissorsImage from '../img/services/scrissors.svg'
 import BeforeImage from '../img/services/before.svg'
+
+
 
 import Fade from 'react-reveal/Fade'
 
@@ -26,7 +30,17 @@ function SectionServices() {
                 </Fade>
             </div>
             <Row className='justify-content-center'>
-                <Service
+                {ServicesList.map((service, key) => {
+                    return <Service
+                        key={key}
+                        title={service.title}
+                        text={service.text}
+                        imagePath={service.imagePath}
+                        alt={service.alt}
+                    />
+                })}
+
+                {/* <Service
                     title='Szczepienia'
                     imagePath={SyringeImage} >
 
@@ -63,7 +77,7 @@ function SectionServices() {
                 <Service
                     title='Badania laboratoryjne'
                     imagePath={MicroscopeImage} >
-                </Service>
+                </Service> */}
             </Row>
         </Section>
     )

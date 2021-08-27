@@ -2,9 +2,6 @@ import React from 'react'
 import Carousel, { autoplayPlugin, Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-import imageOne from '../img/Building.jpg'
-import imageTwo from '../img/About-Photo.jpg'
-import imageThree from '../img/About-Photo.jpg'
 import Review from './Review';
 
 class ReviewsCarousel extends React.Component {
