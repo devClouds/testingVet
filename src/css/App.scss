@@ -587,8 +587,10 @@ body{
         }
         .dropdown-item:hover, 
         .dropdown-item:focus {
-            color: #ffff !important;
             background-color: $color-turcus-dark;
+            a{
+                color: #ffff !important;
+            }
         }
 }
 

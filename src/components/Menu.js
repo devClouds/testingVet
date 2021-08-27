@@ -87,8 +87,8 @@ function Menu() {
                                 onMouseEnter={showDropdown}
                                 onMouseLeave={hideDropdown}
                                 onClick={toggleMobileDropdown}>
-                                <NavDropdown.Item href={'/personel'} >Personel</NavDropdown.Item>
-                                <NavDropdown.Item href={'/przychodnia'} >Przychodnia </NavDropdown.Item>
+                                <NavDropdown.Item><NavLink to={'/personel'}>Personel</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item><NavLink to={'/przychodnia'}>Przychodnia</NavLink></NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
                                 <NavHashLink 
