@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Section from './Section'
+import { NavLink } from 'react-router-dom'
 
 import buildingImage from '../img/Building.jpg'
 import staffImage from '../img/About-Photo.jpg'

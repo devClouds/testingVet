@@ -6,10 +6,10 @@ function NewsModal(props) {
     return (
         <Modal
             {...props}
-            // fullscreen
             aria-labelledby="contained-modal-title-vcenter"
             centered
             className='services-modal'
+            size="lg"
         >
             <Modal.Header
             >

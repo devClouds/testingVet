@@ -2,7 +2,8 @@ import './css/App.scss';
 import './css/Responsive.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 //Pages
 import Home from './pages/Home'
@@ -20,7 +21,8 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <Menu/>
+          <ScrollToTop />
+          <Menu />
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/personel' component={Staff} />
