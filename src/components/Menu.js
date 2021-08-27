@@ -76,7 +76,8 @@ function Menu() {
                         aria-controls="mobile-nav"
                         onClick={() => toggleMobile(!mobileMenu)}
                         className={mobileMenu ? 'open' : 'close'} />
-                    <Navbar.Collapse id="mobile-nav">
+                    <Navbar.Collapse id="mobile-nav"
+                        show={mobileMenu}>
                         <Nav className="ms-auto" as='ul'>
                             <NavDropdown
                                 as='li'
@@ -87,7 +88,7 @@ function Menu() {
                                 onMouseEnter={showDropdown}
                                 onMouseLeave={hideDropdown}
                                 onClick={toggleMobileDropdown}>
-                                <NavDropdown.Item><NavLink to={'/personel'}>Personel</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => toggleMobile(!mobileMenu)} ><NavLink to={'/personel'}>Personel</NavLink></NavDropdown.Item>
                                 <NavDropdown.Item><NavLink to={'/przychodnia'}>Przychodnia</NavLink></NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
