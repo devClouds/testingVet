@@ -1,21 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card, Button } from 'react-bootstrap'
 
-import image from '../img/Red-Vet-Logo.png'
+
+import NewsModal from './NewsModal';
 
 function News(props) {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(prev => !prev);
+    }
+
     return (
-        <Card style={{ width: '20rem' }}>
-            <Card.Img variant="top" src={image} />
-            <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                </Card.Text>
-                <Button variant="primary">Zobacz więcej</Button>
-            </Card.Body>
-        </Card>
+        <div className='mb-4 col-lg-3 col-md-4 col-sm-6'>
+            <Card className='news-card' onClick={openModal} >
+                {/* <Card.Img className='card-image' src={props.image} /> */}
+                <Card.Body>
+                    <Card.Title>{props.title}</Card.Title>
+                    <p className='card-date'>{props.date}</p>
+                    <Card.Text>
+                    <p className='text-muted' dangerouslySetInnerHTML={ {__html: props.text} } ></p>
+                    </Card.Text>
+                    <div className='card-read-more'>
+                        <a >Czytaj więcej {'>'}</a>
+                    </div>
+                    <NewsModal
+                            title={props.title}
+                            imagePath={props.imagePath}
+                            alt={props.alt}
+                            text={props.text}
+                            date={props.date}
+                            show={showModal}
+                    />
+                </Card.Body>
+            </Card>
+        </div>
+
     )
 }
 

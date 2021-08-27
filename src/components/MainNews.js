@@ -1,11 +1,12 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
+import SectionNewsSubpage from './SectionNewsSubpage'
 
-import News from './News'
+
 
 function MainNews() {
     return (
-        <SectionAbout />
+        <SectionNewsSubpage />
     )
 }
 

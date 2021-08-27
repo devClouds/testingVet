@@ -23,7 +23,6 @@ function Menu() {
     const [smallerNav, setsmallerNav] = useState(false)
 
 
-
     //Mobile menu
     const [mobileMenu, toggleMobile] = useState(false);
 
@@ -92,19 +91,22 @@ function Menu() {
                                 <NavDropdown.Item href={'/przychodnia'} >Przychodnia </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink classname='nav-link' to={'/#uslugi'} className="nav-link">Usługi</NavHashLink >
+                                <NavHashLink 
+                                    className='nav-link' 
+                                    to={'/#uslugi'} 
+                                    >Usługi</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavLink classname='nav-link' to={'/sklep'} className="nav-link">Sklep</NavLink>
+                                <NavLink className='nav-link' to={'/sklep'} >Sklep</NavLink>
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavLink classname='nav-link' to={'/aktualnosci'} className="nav-link">Aktualności</NavLink >
+                                <NavLink className='nav-link' to={'/aktualnosci'} >Aktualności</NavLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink classname='nav-link' to={'/#opinie'} className="nav-link">Opinie</NavHashLink >
+                                <NavHashLink className='nav-link' to={'/#opinie'} >Opinie</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink classname='nav-link' to={'/#kontakt'} className="nav-link">Kontakt</NavHashLink >
+                                <NavHashLink className='nav-link' to={'/#kontakt'} >Kontakt</NavHashLink >
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

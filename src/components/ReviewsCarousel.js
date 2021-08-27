@@ -13,9 +13,11 @@ class ReviewsCarousel extends React.Component {
       this.state = {
         value: 0,
         slides: [
-          (<Review author='Monika'>Pani Ania to bardzo sprawna pani chirurg, która potrafi działać cuda swoimi nożóyczkami. Nasz fafik miał jajka, a teraz dzięki Pani Ani już ich nie ma i jest szczęśliwszy</Review>),
-          (<Review author='Damian'>Było źle, ale teraz jest już dobrze. Lubię tą klinikę bo można oprócz operacji dostać darmowe chrupki no i popatrzeć na Heńka - Heniek wymiata</Review>),
-          (<Review author='Ewelina'>Ja się tam nie znam na weterynarii, ale generalnie to fajne miejsce - lepiej do lekarza niż na burgera</Review>),
+          (<Review author='Andrzej M.'>Polecamy z córką. Profesjonalnie podeszła do opieki. Bardzo pomogła naszemu pieskowi i bardzo miła pani dr.</Review>),
+          (<Review author='Maria P.'>Weterynarz z sercem, bardzo profesjonalne podejście, gabinet bardzo ładny.</Review>),
+          (<Review author='Izabela S.'>Szybko, sprawnie, bez kolejek 🙂 miła pani weterynarz 🙂</Review>),
+          (<Review author='J.B.'>Bardzo miła Pani dr. Przyjęła nas bez wcześniejszego umówienia i dobrze zadbała o kota. Polecam z całego serca.</Review>),
+          (<Review author='Dawid K.'>Polecam bardzo serdecznie, miła pani weterynarz, fachowa pomoc :)</Review>),
 
         ],
       }

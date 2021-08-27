@@ -1,8 +1,5 @@
-//import { Modal, Button } from 'bootstrap'
 import React from 'react'
-import { Modal, Button, Row } from 'react-bootstrap'
-
-import buildingImage from '../img/Building.jpg'
+import { Modal  } from 'react-bootstrap'
 
 function ServiceModal(props) {
 
@@ -15,7 +12,7 @@ function ServiceModal(props) {
         >
             <Modal.Header
             >
-                <img className='img-modal img-fluid' src={props.imagePath} alt='Widok frontu przychodni' />
+                <img className='services-modal-img img-fluid' src={props.imagePath} alt={props.alt} />
                 <h3>{props.title}</h3>
             </Modal.Header>
             <Modal.Body
