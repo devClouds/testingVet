@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Staff from './pages/Staff'
 import Building from './pages/Building'
 import News from './pages/News'
+import Shop from './pages/Shop'
 
 
 import Menu from './components/Menu';
@@ -25,6 +26,7 @@ function App() {
             <Route path='/personel' component={Staff} />
             <Route path='/przychodnia' component={Building} />
             <Route path='/aktualnosci' component={News} />
+            <Route path='/sklep' component={Shop} />
           </Switch>
         </div>
       </Router>

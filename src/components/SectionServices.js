@@ -22,7 +22,7 @@ function SectionServices() {
             <div className='justify-content-center text-center'>
                 <SectionTitle title='Nasze usługi' />
                 <Fade bottom>
-                    <p className='margined'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo. Aenean lacinia, nunc nec euismod tincidunt, velit neque hendrerit urna, ac tempor lorem ex quis ex.</p>
+                    <p className='margined'>W Red-Vet staramy się na bieżąco podnosić ilość oraz jakość świadczonych przez nas usług. Zapewniamy kompleksowe leczenie, konsultacje specjalistyczne oraz opiekę weterynaryjną dla zwierząt towarzyszących - wszystkie usługi na najwyższym poziomie, co potwierdzają nasi powracający cyklicznie klienci.</p>
                 </Fade>
             </div>
             <Row className='justify-content-center'>

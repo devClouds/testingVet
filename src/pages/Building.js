@@ -1,18 +1,16 @@
 import React from 'react'
-import Header from '../components/Header'
-import Main from '../components/Main'
 import Footer from '../components/Footer'
-import Menu from '../components/Menu'
+import HeaderSubpage from '../components/HeaderSubpage'
+import MainBuilding from '../components/MainBuilding'
 
-function Home() {
+function Building() {
     return (
         <>
-            <Menu/>
-            <Header/>
-            <Main/>
+            <HeaderSubpage title='Przychodnia'/>
+            <MainBuilding/>
             <Footer/>
         </>
     )
 }
 
-export default Home
+export default Building
