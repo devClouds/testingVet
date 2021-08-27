@@ -19,7 +19,7 @@ function SectionShopIntroduction() {
                 <SectionTitle title='O sklepie' />
             </div>
             <Row>
-                <Col md={6} className='text-center text-md-start' >
+                <Col md={7} className='text-center text-md-start' >
                     <Fade bottom>
                         <div>
                             <p>W 2021 r. przychodnia rozszerzyła zakres swoich usług otwierając na terenie budynku sklep z artykułami dla zwierząt. Dzięki temu wszystkie odwiedzające nas osoby mogą wygodnie i na miejscu nabyć produkty dla swoich domowych towarzyszy.</p>
@@ -38,7 +38,7 @@ function SectionShopIntroduction() {
                         </div>
                     </Fade >
                 </Col>
-                <Col md={6} className='text-center text-md-start' >
+                <Col md={5} className='text-center text-md-start' >
                     <Bounce right>
                         <div>
                             <img className='img-size' src={shopInsideImage} alt='Widok na całość sklepu' />
@@ -47,14 +47,14 @@ function SectionShopIntroduction() {
                 </Col>
                 </Row>
                 <Row className='mt-5 flex-wrap-reverse'>
-                <Col md={6} className='text-center text-md-start' >
+                <Col md={5} className='text-center text-md-start' >
                     <Bounce left>
                         <div>
                             <img className='img-size' src={shopInsideImage2} alt='Widok na ladę sklepową oraz produkty' />
                         </div>
                     </Bounce >
                 </Col>
-                <Col md={6} className='text-center text-md-start' >
+                <Col md={7} className='text-center text-md-start' >
                     <Fade bottom>
                         <div>
                             <p>Serdecznie zapraszamy gości przychodni oraz osoby z zewnątrz do odwiedzania naszego sklepu. Nasz personel chętnie oraz profesjonalnie doradzi w zakupie odpowiednich produktów dostosowanych do potrzeb konkretnego zwierzaka.</p>
