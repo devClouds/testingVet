@@ -18,10 +18,9 @@ function News(props) {
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
                     <p className='card-date'>{props.date}</p>
-                    <Card.Text>
-                    <p className='text-muted' dangerouslySetInnerHTML={ {__html: props.text} } ></p>
-                    </Card.Text>
-                    <div className='card-read-more'>
+                    <div className='card-text text-muted' dangerouslySetInnerHTML={ {__html: props.text} } >
+                    </div>
+                    <div className='card-read-more mt-3'>
                         <a >Czytaj więcej {'>'}</a>
                     </div>
                     <NewsModal
