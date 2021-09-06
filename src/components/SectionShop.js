@@ -2,7 +2,6 @@ import React from 'react'
 import Section from './Section'
 import { Col, Row } from 'react-bootstrap'
 import SectionTitle from './SectionTitle'
-import { NavLink } from 'react-router-dom'
 
 import Fade from 'react-reveal/Fade'
 

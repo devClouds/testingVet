@@ -23,7 +23,7 @@ function SectionServices() {
                         key={key}
                         title={service.title}
                         text={service.text}
-                        imagePath={service.imagePath}
+                        path={service.path}
                         alt={service.alt}
                     />
                 })}

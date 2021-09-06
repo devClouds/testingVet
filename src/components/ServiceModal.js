@@ -12,7 +12,7 @@ function ServiceModal(props) {
         >
             <Modal.Header
             >
-                <img className='services-modal-img img-fluid' src={`../images/services/${props.imagePath}`} alt={props.alt} />
+                <img className='services-modal-img img-fluid' src={`../images/services/${props.path}`} alt={props.alt} />
                 <h3>{props.title}</h3>
             </Modal.Header>
             <Modal.Body
