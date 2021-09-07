@@ -42,7 +42,7 @@ function SectionContact() {
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td className='pr-3'>Poniedziałek:</td>
+                                                    <td className='pe-3'>Poniedziałek:</td>
                                                     <td>10:00 - 18:00</td>
                                                 </tr>
                                                 <tr>

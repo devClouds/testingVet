@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
-
-
 $font-QS: 'Quicksand', sans-serif;
 $font-Exo: 'Exo 2', sans-serif;
 $font-Lato: 'Lato', sans-serif;
@@ -20,6 +18,10 @@ $color-orange: #F9A13D;
 
 
 /*General*/
+*{
+    font-family: $font-Poppins;
+}
+
 html, body{
     background-color: #ffff;
 
@@ -89,23 +91,6 @@ h3{
     
 }
 
-.button{
-    padding: 14px 28px;
-    background-color: $color-turcus-dark;
-    border: 2px solid $color-turcus-dark;
-    border-radius: 10px;
-    color: white;
-    text-transform: uppercase;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-        &:hover{
-            color: $color-turcus-dark;
-            background-color: #fff;
-        }
-
-}
-
-
 .button-small{
     display: inline-block;
     padding: 10px 25px;
@@ -122,7 +107,6 @@ h3{
 //Allow for anchor tags to be applied with margin
 section{
     scroll-margin-top: 3rem;
-    //font-family: $font-Poppins;
 }
 /*------------------------------------*/
 
@@ -203,7 +187,6 @@ section{
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     text-align: center;
     transition: .25s ease-in-out;
-    //overflow: hidden;
 
     &:hover{
         box-shadow: 0 15px 25px rgba(0,0,0,0.8);
@@ -250,9 +233,7 @@ section{
     }
 
     .services-modal{
-        //padding-right: 0px !important;
         padding: 0px !important;
-
 
         .modal-header{
             flex-direction: column;
@@ -275,7 +256,6 @@ section{
     background-image: url(../img/BG-Shop.jpeg);
     padding: 90px 0px;
 }
-
 /*------------------------------------*/
 
 
@@ -285,16 +265,6 @@ section{
     @include wrapper(#fff);
 }
 
-// .staff-photo{
-//     img{
-//         border-radius: .25rem;
-//     }
-// }
-
-
-
-/*------------------------------------*/
-
 /*Contact*/
 .contact-wrapper{
     @include wrapper($color-gray-bright);
@@ -303,41 +273,20 @@ section{
         margin-bottom: 5px;
     }
 }
-
-
 .indent{
     margin-right: 2.5em;
 }
-
-label{
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.label-rodo{
-    font-size: 10px;
-    cursor: pointer;
-}
-
-.contact-form-button{
-    @extend .button;
-    margin-top: 20px;
-}
-
 .icon{
     max-height: 1.5em;
     margin-right: 1em;
 }
-
 #google-map{
     min-height: 400px;
 }
-
 /*------------------------------------*/
 
 
 /*Reviews*/
-
 .reviews-wrapper{
     background-image: url(../img/BG-Reviews.jpg);
     padding: 90px 0px;
@@ -426,7 +375,7 @@ blockquote{
 body{
 
     .nav-wrapper{
-        font-family: $font-Poppins;
+        //font-family: $font-Poppins;
         background-color: #ffff;
         padding: 15px 0px;
         transform: translateY(0);
@@ -684,7 +633,6 @@ body{
 }
 
 .news-modal-img{
-    //max-height: 100vw;
     max-height: 400px;
 }
 
