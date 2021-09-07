@@ -562,7 +562,8 @@ body{
 }
 
 //News
-.card{
+.news-card{
+
     box-shadow: 5px 5px 14px 8px rgba(0,0,0,0.25);
     cursor: pointer;
     transition: .25s ease-in-out;
@@ -575,9 +576,6 @@ body{
             color:#17ae92 !important;
         }
     }
-}
-
-.news-card{
     
     .card-title{
         text-align: center;
@@ -590,7 +588,6 @@ body{
     }
      
     .card-image{
-        //max-width: 70%;
         padding: 1em 1em 0em 1em;
         margin: auto;
 
@@ -648,6 +645,7 @@ body{
         align-items: center;
         justify-content: center;
         border-bottom: 2px solid $color-turcus-dark;
+        color: $color-turcus-dark
     }
 
     .card-image{
