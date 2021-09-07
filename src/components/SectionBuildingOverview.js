@@ -3,7 +3,7 @@ import Section from './Section'
 import SectionTitle from './SectionTitle'
 import BuildingCarousel from './BuildingCarousel'
 
-import Flip from 'react-reveal/Flip'
+import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
 function SectionBuildingOverview() {
@@ -14,9 +14,9 @@ function SectionBuildingOverview() {
                 <Fade bottom>
                     <p className='margined'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at maximus lectus. Suspendisse a sapien sit amet ex ultricies tempus nec sit amet nulla. Proin sapien augue, egestas vel arcu a, euismod consequat justo. Aenean lacinia, nunc nec euismod tincidunt, velit neque hendrerit urna, ac tempor lorem ex quis ex.</p>
                 </Fade>
-                <Flip bottom>
+                <Slide bottom>
                     <BuildingCarousel/>
-                </Flip>
+                </Slide>
             </div>
         </Section>
     )

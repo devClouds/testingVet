@@ -1,18 +1,21 @@
-import './css/App.scss';
-import './css/Responsive.scss'
+import './scss/App.scss';
+import './scss/Responsive.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-//Pages
-import Home from './pages/Home'
-import Staff from './pages/Staff'
-import Building from './pages/Building'
-import News from './pages/News'
-import Shop from './pages/Shop'
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+import React, { Suspense, lazy } from 'react';
 
 import Menu from './components/Menu';
+
+const Home = lazy(() => import('./pages/Home'));
+const Staff = lazy(() => import('./pages/Staff'));
+const Building = lazy(() => import('./pages/Building'));
+const News = lazy(() => import('./pages/News'));
+const Shop = lazy(() => import('./pages/Shop'));
+
+
+
 
 function App() {
 
@@ -20,14 +23,17 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <Menu/>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/personel' component={Staff} />
-            <Route path='/przychodnia' component={Building} />
-            <Route path='/aktualnosci' component={News} />
-            <Route path='/sklep' component={Shop} />
-          </Switch>
+          <ScrollToTop />
+          <Menu />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/personel' component={Staff} />
+              <Route path='/przychodnia' component={Building} />
+              <Route path='/aktualnosci' component={News} />
+              <Route path='/sklep' component={Shop} />
+            </Switch>
+          </Suspense>
         </div>
       </Router>
     </div>

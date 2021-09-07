@@ -4,7 +4,7 @@ import Section from './Section'
 
 import SectionTitle from './SectionTitle'
 
-import Flip from 'react-reveal/Flip'
+import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
 function SectionBuildingSchedule() {
@@ -15,7 +15,7 @@ function SectionBuildingSchedule() {
                 <Fade bottom>
                     <p className='margined'>Nasza przychodnia jest czynna dla klientów w następujących dniach tygodnia:</p>
                 </Fade>
-                <Flip bottom>
+                <Slide bottom>
                     <Table className='contact-table mb-4' striped bordered hover size='sm'>
                         <tbody>
                             <tr>
@@ -48,7 +48,7 @@ function SectionBuildingSchedule() {
                             </tr>
                         </tbody>
                     </Table>
-                </Flip>
+                </Slide>
                 <div class="alert alert-danger" role="alert">
                 <Fade bottom>
                         <p>W pilnych przypadkach umożliwiamy także wizytę poza standardowymi godzinami pracy. W takich przypadkach prosimy jednakże o wcześniejsze umówienie takiej wizyty na miejscu, telefonicznie lub mailowo.</p>

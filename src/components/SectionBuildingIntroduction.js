@@ -1,12 +1,8 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 import Section from './Section'
 
-import buildingImage from '../img/Building.jpg'
-import staffImage from '../img/About-Photo.jpg'
 import SectionTitle from './SectionTitle'
 
-import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade'
 
 function SectionBuildingIntroduction() {

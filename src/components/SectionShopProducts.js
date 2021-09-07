@@ -23,7 +23,6 @@ function SectionShopProducts() {
                     return <Product
                         key={key}
                         title={news.title}
-                        date={news.date}
                         text={news.text}
                         imagePath={news.imagePath}
                         alt={news.alt}

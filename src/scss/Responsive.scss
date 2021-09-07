@@ -1,0 +1,192 @@
+@media screen and (min-width:992px) {
+    .services-box-content{
+        height: 120px;
+    }
+
+    body{
+        .contact-table{
+            width: 60% ;
+            margin: auto;
+        }
+    }
+
+}
+
+
+@media screen and (min-width:768px) {
+    .img-size{
+        width: 100%;
+        height: 30vw;
+    }
+
+    .building-carousel-img{
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (max-width:767px) {
+
+    body{
+
+        p,.button, td, .button-small, .card-title h5{
+            font-size: 16px;
+        }
+    
+        .header-text{
+            font-size: 48px
+        }
+    
+        .sub-header-text{
+            font-size: 30px;
+        }
+    
+        h2{
+            font-size: 28px;
+        }
+    
+        h3{
+            font-size: 24px;
+        }
+    
+        h4{
+            font-size: 22px;
+        }
+    
+        h5, label {
+            font-size: 20px;
+        }
+    
+        .header-text{
+            font-size: 52px;
+        }
+    
+        .sub-header-text{
+            font-size: 32px;
+        }
+    
+        .navbar-brand-logo{
+            width: 200px;
+        }
+
+        .nav-item:after{
+            display: none;
+        }
+        .nav-item::before {
+            position: absolute;
+            display: block;
+            top: 18px;
+            left: 0;
+            width: 14px;
+            height: 1px;
+            content: "";
+            border: none;
+            background-color: #000;
+        }
+        .dropdown-toggle::after {
+            position: absolute;
+            display: block;
+            top: 12px;
+            left: -25px;
+            width: 1px;
+            height: 14px;
+            content: "";
+            border: none;
+            background-color: #000;
+            transition: all 200ms linear;
+        }
+        .dropdown-toggle[aria-expanded="true"]::after{
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+        .dropdown-menu {
+            padding: 0 !important;
+            background-color: transparent;
+            box-shadow: none;
+            transition: all 200ms linear;
+        }
+    }
+
+    .services-box-content{
+        height: 110px;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+
+    body{
+        p,.button, .footer-wrapper p, td, .button-small {
+            font-size: 14px;
+        }
+    
+        h2{
+            font-size: 24px;
+        }
+    
+        h3{
+            font-size: 20px;
+        }
+    
+        h4{
+            font-size: 18px;
+        }
+    
+        h5, label {
+            font-size: 16px;
+        }
+    
+        .header-text{
+            font-size: 36px;
+        }
+    
+        .sub-header-text{
+            font-size: 24px;
+        }
+    
+        .navbar-brand-logo{
+            width: 175px;
+        }
+    
+        .paralax{
+            background-attachment: scroll;
+            background-size: 100%;
+            background-position: top;
+            min-height: auto;
+    
+    
+            justify-content: center;
+        }
+    
+        .paralax-content{
+            margin-top: 60%;
+            text-align: center;
+            
+            p{
+                color: black;
+            }
+        }
+
+        .services-box-content{
+            height: 75px;
+        }
+        .services-box-icon {
+            padding: 1em;
+
+            img{
+                max-width: 3.5rem;
+                margin-bottom: .5rem;
+            }
+        }
+
+        blockquote{
+            padding: 0px 20px 0px 20px;
+        }
+    }
+ 
+}

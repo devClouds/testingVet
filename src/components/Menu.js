@@ -19,12 +19,11 @@ function Menu() {
             setsmallerNav(false)
         }
     };
-
     const [smallerNav, setsmallerNav] = useState(false)
 
 
     //Mobile menu
-    const [mobileMenu, toggleMobile] = useState(false);
+    const [expanded, setExpanded] = useState(false);
 
 
     //Show dropdown on hover
@@ -63,7 +62,8 @@ function Menu() {
 
     return (
         <div className={`nav-wrapper start-header start-style fixed-top ${smallerNav ? 'smaller' : ''}`}>
-            <Navbar expand="md">
+            <Navbar expand="md"
+                    expanded={expanded}>
                 <Container fluid>
                     <Navbar.Brand href="/">
                         <img
@@ -74,8 +74,8 @@ function Menu() {
                     </Navbar.Brand>
                     <Navbar.Toggle
                         aria-controls="mobile-nav"
-                        onClick={() => toggleMobile(!mobileMenu)}
-                        className={mobileMenu ? 'open' : 'close'} />
+                        onClick={() => setExpanded(expanded ? false : "expanded")}
+                        className={expanded ? 'open' : 'close'} />
                     <Navbar.Collapse id="mobile-nav">
                         <Nav className="ms-auto" as='ul'>
                             <NavDropdown
@@ -87,26 +87,37 @@ function Menu() {
                                 onMouseEnter={showDropdown}
                                 onMouseLeave={hideDropdown}
                                 onClick={toggleMobileDropdown}>
-                                <NavDropdown.Item href={'/personel'} >Personel</NavDropdown.Item>
-                                <NavDropdown.Item href={'/przychodnia'} >Przychodnia </NavDropdown.Item>
+                                <NavDropdown.Item ><NavLink onClick={() => setExpanded(false)} to={'/personel'}>Personel</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item ><NavLink onClick={() => setExpanded(false)} to={'/przychodnia'}>Przychodnia</NavLink></NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink 
-                                    className='nav-link' 
-                                    to={'/#uslugi'} 
-                                    >Usługi</NavHashLink >
+                                <NavHashLink
+                                    onClick={() => setExpanded(false)}
+                                    className='nav-link'
+                                    to={'/#uslugi'}
+                                >Usługi</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavLink className='nav-link' to={'/sklep'} >Sklep</NavLink>
+                                <NavLink
+                                    onClick={() => setExpanded(false)}
+                                    className='nav-link'
+                                    to={'/sklep'} >Sklep</NavLink>
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavLink className='nav-link' to={'/aktualnosci'} >Aktualności</NavLink >
+                                <NavLink
+                                    onClick={() => setExpanded(false)}
+                                    className='nav-link'
+                                    to={'/aktualnosci'} >Aktualności</NavLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink className='nav-link' to={'/#opinie'} >Opinie</NavHashLink >
+                                <NavHashLink onClick={() => setExpanded(false)}
+                                    className='nav-link'
+                                    to={'/#opinie'} >Opinie</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink className='nav-link' to={'/#kontakt'} >Kontakt</NavHashLink >
+                                <NavHashLink onClick={() => setExpanded(false)}
+                                    className='nav-link'
+                                    onClick={() => setExpanded(false)} to={'/#kontakt'} >Kontakt</NavHashLink >
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Section from './Section'
 import SectionTitle from './SectionTitle'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 import Fade from 'react-reveal/Fade'
 
@@ -19,10 +19,6 @@ function SectionNews() {
                     </Fade>
                 </Col>
             </Row>
-            {/* <Row>
-                <News title='Przychodnia nieczynna 15.08' date='5.08.2020'></News>
-                <News title='Trivia do adopcji' date='5.08.2020'></News>
-            </Row> */}
         </Section>
     )
 }

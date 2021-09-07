@@ -11,7 +11,6 @@ import shopInsideImage from '../img/Shop-Inside.jpg'
 import shopInsideImage2 from '../img/Shop-Inside-2.jpg'
 
 
-
 function SectionShopIntroduction() {
     return (
         <Section id='wstęp' name='shop-introduction'>
@@ -19,11 +18,13 @@ function SectionShopIntroduction() {
                 <SectionTitle title='O sklepie' />
             </div>
             <Row>
-                <Col md={6} className='text-center text-md-start' >
-                    <Fade bottom>
+                <Col lg={6} className='text-center text-lg-start' >
+                    <Bounce left>
                         <div>
                             <p>W 2021 r. przychodnia rozszerzyła zakres swoich usług otwierając na terenie budynku sklep z artykułami dla zwierząt. Dzięki temu wszystkie odwiedzające nas osoby mogą wygodnie i na miejscu nabyć produkty dla swoich domowych towarzyszy.</p>
+                            <p>Serdecznie zapraszamy do odwiedzania naszego sklepu. Nasz personel chętnie oraz profesjonalnie doradzi w zakupie odpowiednich produktów dostosowanych do potrzeb konkretnego zwierzaka.</p>
                             <p className='margined'><strong>W naszym asortymencie znajdują się m.in</strong>
+                            
                                 <ul class='products-list'>
                                     <li>specjalistyczne karmy wysokiej jakości</li>
                                     <li>słodkie oraz mięsne smakołyki</li>
@@ -34,35 +35,18 @@ function SectionShopIntroduction() {
                                     <li>zabawki oraz inne akcesoria </li>
                                 </ul>
                             </p>
-                            <a href='#oferta' className='button-small mb-4 mb-md-0'>Zobacz szczegółowy asortyment</a>
+                            <a href='#oferta' className='button-small mb-4'>Zobacz szczegółowy asortyment</a>       
                         </div>
-                    </Fade >
+                    </Bounce >
                 </Col>
-                <Col md={6} className='text-center text-md-start' >
+                <Col lg={6} className='text-center text-md-start' >
                     <Bounce right>
                         <div>
-                            <img className='img-size' src={shopInsideImage} alt='Widok na całość sklepu' />
+                            <img src={shopInsideImage} alt='Widok na całość sklepu' />
                         </div>
                     </Bounce >
                 </Col>
                 </Row>
-                <Row className='mt-5 flex-wrap-reverse'>
-                <Col md={6} className='text-center text-md-start' >
-                    <Bounce left>
-                        <div>
-                            <img className='img-size' src={shopInsideImage2} alt='Widok na ladę sklepową oraz produkty' />
-                        </div>
-                    </Bounce >
-                </Col>
-                <Col md={6} className='text-center text-md-start' >
-                    <Fade bottom>
-                        <div>
-                            <p>Serdecznie zapraszamy gości przychodni oraz osoby z zewnątrz do odwiedzania naszego sklepu. Nasz personel chętnie oraz profesjonalnie doradzi w zakupie odpowiednich produktów dostosowanych do potrzeb konkretnego zwierzaka.</p>
-                            <p>Wszystko zaś wygodnie, szybko i fachowo oraz w konkurencyjnych cenach.</p>
-                        </div>
-                    </Fade >
-                </Col>
-            </Row>
         </Section>
     )
 }
