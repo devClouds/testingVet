@@ -23,8 +23,6 @@
         width: 800px;
         height: 600px;
     }
-
-
 }
 
 
@@ -112,6 +110,10 @@
             box-shadow: none;
             transition: all 200ms linear;
         }
+    }
+
+    .services-box-content{
+        height: 110px;
     }
 
 }
