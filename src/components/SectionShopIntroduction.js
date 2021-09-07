@@ -5,10 +5,8 @@ import Section from './Section'
 import SectionTitle from './SectionTitle'
 
 import Bounce from 'react-reveal/Bounce';
-import Fade from 'react-reveal/Fade'
 
 import shopInsideImage from '../img/Shop-Inside.jpg'
-import shopInsideImage2 from '../img/Shop-Inside-2.jpg'
 
 
 function SectionShopIntroduction() {
