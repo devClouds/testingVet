@@ -1,5 +1,5 @@
-import './css/App.scss';
-import './css/Responsive.scss'
+import './scss/App.scss';
+import './scss/Responsive.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
