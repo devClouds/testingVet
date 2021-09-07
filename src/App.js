@@ -2,7 +2,7 @@ import './scss/App.scss';
 import './scss/Responsive.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import React, { Suspense, lazy } from 'react';
 
@@ -13,9 +13,6 @@ const Staff = lazy(() => import('./pages/Staff'));
 const Building = lazy(() => import('./pages/Building'));
 const News = lazy(() => import('./pages/News'));
 const Shop = lazy(() => import('./pages/Shop'));
-
-
-
 
 function App() {
 

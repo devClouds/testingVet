@@ -594,20 +594,12 @@ body{
     }
 
     .card-body{
-        //display: flex;
-        //flex-direction: column;
         padding: 1rem 1em 2rem 1rem;
     }
 
     .card-text{
-        display: flex;
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;
-
-
-        //text-overflow: ellipsis;
+        display: -webkit-box;  
         -webkit-line-clamp: 3;
-
         -webkit-box-orient: vertical;
         overflow: hidden;
 
