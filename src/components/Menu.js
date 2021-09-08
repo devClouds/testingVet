@@ -110,14 +110,16 @@ function Menu() {
                                     to={'/aktualnosci'} >Aktualności</NavLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink onClick={() => setExpanded(false)}
+                                <NavHashLink 
+                                    onClick={() => setExpanded(false)}
                                     className='nav-link'
                                     to={'/#opinie'} >Opinie</NavHashLink >
                             </Nav.Item>
                             <Nav.Item as='li' className='ps-4 ps-md-0 ms-0 ms-md-4'>
-                                <NavHashLink onClick={() => setExpanded(false)}
+                                <NavHashLink 
+                                    onClick={() => setExpanded(false)}
                                     className='nav-link'
-                                    onClick={() => setExpanded(false)} to={'/#kontakt'} >Kontakt</NavHashLink >
+                                    to={'/#kontakt'} >Kontakt</NavHashLink >
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
