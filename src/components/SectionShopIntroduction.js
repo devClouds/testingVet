@@ -1,12 +1,14 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Section from './Section'
+import { HashLink } from 'react-router-hash-link';
 
 import SectionTitle from './SectionTitle'
 
 import Bounce from 'react-reveal/Bounce';
 
 import shopInsideImage from '../img/Shop-Inside.jpg'
+
 
 
 function SectionShopIntroduction() {
@@ -33,7 +35,7 @@ function SectionShopIntroduction() {
                                     <li>zabawki oraz inne akcesoria </li>
                                 </ul>
                             </p>
-                            <a href='#oferta' className='button-small mb-4'>Zobacz szczegółowy asortyment</a>       
+                            <HashLink to='#oferta' className='button-small mb-4'>Zobacz szczegółowy asortyment</HashLink>       
                         </div>
                     </Bounce >
                 </Col>
