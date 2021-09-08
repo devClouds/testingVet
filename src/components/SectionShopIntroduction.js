@@ -23,7 +23,7 @@ function SectionShopIntroduction() {
                         <div>
                             <p>W 2021 r. przychodnia rozszerzyła zakres swoich usług otwierając na terenie budynku sklep z artykułami dla zwierząt. Dzięki temu wszystkie odwiedzające nas osoby mogą wygodnie i na miejscu nabyć produkty dla swoich domowych towarzyszy.</p>
                             <p>Serdecznie zapraszamy do odwiedzania naszego sklepu. Nasz personel chętnie oraz profesjonalnie doradzi w zakupie odpowiednich produktów dostosowanych do potrzeb konkretnego zwierzaka.</p>
-                            <p className='margined'><strong>W naszym asortymencie znajdują się m.in</strong>
+                            <p><strong>W naszym asortymencie znajdują się m.in</strong></p>
                             
                                 <ul class='products-list'>
                                     <li>specjalistyczne karmy wysokiej jakości</li>
@@ -34,7 +34,7 @@ function SectionShopIntroduction() {
                                     <li>transportery</li>
                                     <li>zabawki oraz inne akcesoria </li>
                                 </ul>
-                            </p>
+                            
                             <HashLink to='#oferta' className='button-small mb-4'>Zobacz szczegółowy asortyment</HashLink>       
                         </div>
                     </Bounce >

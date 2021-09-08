@@ -34,7 +34,7 @@
 
     body{
 
-        p,.button, td, .button-small, .card-title h5{
+        p,.button, td, .button-small, .card-title h5, li:not(.nav-item){
             font-size: 16px;
         }
     
@@ -70,10 +70,6 @@
             font-size: 32px;
         }
     
-        .navbar-brand-logo{
-            //width: 200px;
-        }
-
         .nav-item:after{
             display: none;
         }
@@ -121,7 +117,7 @@
 @media screen and (max-width:575px) {
 
     body{
-        p,.button, .footer-wrapper p, td, .button-small {
+        p,.button, .footer-wrapper p, td, .button-small, li:not(.nav-item) {
             font-size: 14px;
         }
     
@@ -147,10 +143,6 @@
     
         .sub-header-text{
             font-size: 24px;
-        }
-    
-        .navbar-brand-logo{
-            //width: 175px;
         }
     
         .paralax{

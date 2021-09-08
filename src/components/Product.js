@@ -11,9 +11,9 @@ function Product(props) {
                 <Card.Img className='card-image' src={`../images/products/${props.imagePath}`} alt={props.alt} />
                 <Card.Body>
                     <Card.Title><h4>{props.title}</h4></Card.Title>
-                    <Card.Text>
-                    <p className='text-muted' dangerouslySetInnerHTML={ {__html: props.text} } ></p>
-                    </Card.Text>
+                    <div className='card-text'>
+                        <p className='text-muted' dangerouslySetInnerHTML={ {__html: props.text} } ></p>
+                    </div>
                 </Card.Body>
             </Card>
         </div>

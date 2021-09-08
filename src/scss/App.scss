@@ -33,7 +33,9 @@ html, body{
 }
 
 img{
-    max-width: 100%;
+    //max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 p.margined{
@@ -85,6 +87,16 @@ h3{
     
 }
 
+@mixin header-wrapper($height){
+    background-size: cover; 
+    height: $height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 91px; //width of menu
+}
+
 .button-small{
     display: inline-block;
     padding: 10px 25px;
@@ -107,12 +119,7 @@ section{
 /*Header*/
 .header-wrapper{
     background: url(../img/BG-Header.jpg) no-repeat center center fixed;
-    background-size: cover; 
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    @include header-wrapper(100vh);
 }
 
 .sub-header-text{
@@ -134,12 +141,7 @@ section{
 
 .header-subpage-wrapper{
     background: url(../img/BG-Header.jpg) no-repeat center center fixed;
-    background-size: cover; 
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    @include header-wrapper(50vh)
 }
 
 /*About*/
@@ -268,7 +270,8 @@ section{
     margin-right: 2.5em;
 }
 .icon{
-    max-height: 1.5em;
+    width:auto;
+    height: 1.5em;
     margin-right: 1em;
 }
 #google-map{
@@ -521,9 +524,7 @@ body{
 
 
 .img-about{
-    //height: 250px;
     max-width: 100%;
-    //max-height: 300px;
 }
 
 
