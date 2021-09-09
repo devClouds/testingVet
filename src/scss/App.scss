@@ -8,7 +8,8 @@ $color-gray-dark: #A5A5A5;
 $color-gray-bright: #EBEBEB;
 $color-green-dark: #016857;
 $color-green-bright: #85B4AA;
-$color-orange: #F9A13D;
+//$color-orange-dark: #F9A13D;
+$color-orange: #fad48c;
 
 
 /*General*/
@@ -101,7 +102,7 @@ h3{
     display: inline-block;
     padding: 10px 25px;
     background-color: $color-orange;
-    border: 2px solid black;
+    border: 1px solid black;
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
@@ -338,6 +339,7 @@ blockquote{
 /*Scroll Top Button*/
 #scroll-top-button{
     display: inline-block;
+    border: 1px solid black;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -613,12 +615,6 @@ body{
         text-align: right;
     }
 }
-
-.news-modal-img{
-    max-height: 400px;
-}
-
-
 // Shop
 .shop-introduction-wrapper {
     @include wrapper(#fff);

@@ -12,7 +12,7 @@ function ModalNews(props) {
             size="lg"
         >
             <Modal.Header>
-                <img className='news-modal-img img-fluid' src={`../images/news/${props.imagePath}`} alt={props.alt} />
+                <img className='img-fluid' src={`../images/news/${props.imagePath}`} alt={props.alt} />
                 <h3 className='text-center'>{props.title}</h3>
                 <p><em>{props.date}</em></p>
             </Modal.Header>
