@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap'
 
-function NewsModal(props) {
+function ModalNews(props) {
 
     return (
         <Modal
@@ -25,4 +25,4 @@ function NewsModal(props) {
     )
 }
 
-export default NewsModal
+export default ModalNews

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
-import Section from './Section'
+import Section from '../../Section'
 
-import ProductsList from '../json/Products.json'
+import ProductsList from '../../../json/Products.json'
 
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 import Fade from 'react-reveal/Fade'
-import Product from './Product';
+import Product from './Product/Product';
 
-function SectionShopProducts() {
+function Products() {
     return (
         <Section id='oferta' name='subpage'>
             <div className='justify-content-center text-center'>
@@ -33,4 +33,4 @@ function SectionShopProducts() {
     )
 }
 
-export default SectionShopProducts
+export default Products

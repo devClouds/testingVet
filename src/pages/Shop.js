@@ -2,13 +2,13 @@ import React from 'react'
 
 import Footer from '../components/Footer'
 import HeaderSubpage from '../components/HeaderSubpage'
-import MainShop from '../components/MainShop'
+import Main from '../components/Shop/Main'
 
 function Shop() {
     return (
         <>
             <HeaderSubpage title='Sklep'/>
-            <MainShop/>
+            <Main/>
             <Footer/>
         </>
     )

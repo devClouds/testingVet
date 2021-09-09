@@ -1,16 +1,16 @@
 import React from 'react'
-import Section from './Section'
+import Section from '../../Section'
 import { Col, Row } from 'react-bootstrap'
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 
-import FacebookIcon from '../img/icons/facebook.png'
-import MailIcon from '../img/icons/mail.png'
-import MarkerIcon from '../img/icons/marker.png'
-import PhoneIcon from '../img/icons/phone.png'
+import FacebookIcon from '../../../img/icons/facebook.png'
+import MailIcon from '../../../img/icons/mail.png'
+import MarkerIcon from '../../../img/icons/marker.png'
+import PhoneIcon from '../../../img/icons/phone.png'
 
 import Bounce from 'react-reveal/Bounce';
 
-function SectionContact() {
+function Contact() {
     return (
         <Section id='kontakt' name='contact'>
             <div className='justify-content-center text-center'>
@@ -91,4 +91,4 @@ function SectionContact() {
         </Section>
     )
 }
-export default SectionContact
+export default Contact

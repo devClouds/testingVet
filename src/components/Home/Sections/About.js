@@ -1,15 +1,15 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import Section from './Section'
+import Section from '../../Section'
 
-import buildingImage from '../img/Building.jpg'
-import staffImage from '../img/Staff.jpg'
-import SectionTitle from './SectionTitle'
+import buildingImage from '../../../img/Building.jpg'
+import staffImage from '../../../img/Staff.jpg'
+import SectionTitle from '../../SectionTitle'
 
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade'
 
-function SectionAbout() {
+function About() {
     return (
         <Section id='o-nas' name='about'>
             <div className='justify-content-center text-center'>
@@ -49,4 +49,4 @@ function SectionAbout() {
     )
 }
 
-export default SectionAbout
+export default About

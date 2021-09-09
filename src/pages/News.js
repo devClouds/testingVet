@@ -1,14 +1,14 @@
 import React from 'react'
 
-import MainNews from '../components/MainNews'
 import Footer from '../components/Footer'
 import HeaderSubpage from '../components/HeaderSubpage'
+import Main from '../components/News/Main'
 
 function News() {
     return (
         <>
             <HeaderSubpage title='Aktualności' />
-            <MainNews />
+            <Main/>
             <Footer />
         </>
     )

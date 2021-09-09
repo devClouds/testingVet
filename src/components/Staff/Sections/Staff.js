@@ -1,14 +1,14 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import Section from './Section'
+import Section from '../../Section'
 
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 
-import AnnaImage from '../img/Ania.jpg'
+import AnnaImage from '../../../img/Ania.jpg'
 
 import Bounce from 'react-reveal/Bounce';
 
-function SectionStaffSubpage() {
+function Staff() {
     return (
         <Section id='personel' name='subpage'>
             <div className='justify-content-center text-center'>
@@ -36,4 +36,4 @@ function SectionStaffSubpage() {
     )
 }
 
-export default SectionStaffSubpage
+export default Staff

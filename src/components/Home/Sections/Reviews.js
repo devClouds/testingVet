@@ -1,12 +1,12 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import ReviewsCarousel from './ReviewsCarousel'
-import Section from './Section'
-import SectionTitle from './SectionTitle'
+import ReviewsCarousel from './Review/ReviewsCarousel'
+import Section from '../../Section'
+import SectionTitle from '../../SectionTitle'
 
 import Fade from 'react-reveal/Fade'
 
-function SectionReviews() {
+function Reviews() {
     return (
         <Section id='opinie' name='reviews' paralax='true'>
             <Row>
@@ -21,4 +21,4 @@ function SectionReviews() {
     )
 }
 
-export default SectionReviews
+export default Reviews

@@ -1,12 +1,12 @@
 import React from 'react'
-import Section from './Section'
-import SectionTitle from './SectionTitle'
-import BuildingCarousel from './BuildingCarousel'
+import Section from '../../Section'
+import SectionTitle from '../../SectionTitle'
+import BuildingCarousel from './Carousel/BuildingCarousel'
 
 import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
-function SectionBuildingOverview() {
+function Overview() {
     return (
         <Section id='budynek' name='building-overview'>
             <div className='justify-content-center text-center'>
@@ -22,4 +22,4 @@ function SectionBuildingOverview() {
     )
 }
 
-export default SectionBuildingOverview
+export default Overview

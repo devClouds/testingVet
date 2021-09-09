@@ -1,13 +1,14 @@
 import React from 'react'
-import SectionStaffSubpage from '../components/SectionStaffSubpage'
+
 import Footer from '../components/Footer'
 import HeaderSubpage from '../components/HeaderSubpage'
+import Main from '../components/Staff/Main'
 
 function Staff() {
     return (
         <>
             <HeaderSubpage title='Personel'/>
-            <SectionStaffSubpage/>
+            <Main/>
             <Footer/>
         </>
     )

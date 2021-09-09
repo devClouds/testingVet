@@ -1,17 +1,17 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import Section from './Section'
+import Section from '../../Section'
 import { HashLink } from 'react-router-hash-link';
 
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 
 import Bounce from 'react-reveal/Bounce';
 
-import shopInsideImage from '../img/Shop-Inside.jpg'
+import shopInsideImage from '../../../img/Shop-Inside.jpg'
 
 
 
-function SectionShopIntroduction() {
+function Introduction() {
     return (
         <Section id='wstęp' name='shop-introduction'>
             <div className='justify-content-center text-center'>
@@ -51,4 +51,4 @@ function SectionShopIntroduction() {
     )
 }
 
-export default SectionShopIntroduction
+export default Introduction

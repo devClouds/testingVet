@@ -2,9 +2,9 @@ import React from 'react'
 import Carousel, { autoplayPlugin, Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-import BuildingImageOne from '../img/Head-Photo-BG.jpg'
-import BuildingImageTwo from '../img/Header-Photo-BG.jpg'
-import BuildingImageThree from '../img/Building.jpg'
+import BuildingImageOne from '../../../../img/Head-Photo-BG.jpg'
+import BuildingImageTwo from '../../../../img/Header-Photo-BG.jpg'
+import BuildingImageThree from '../../../../img/Building.jpg'
 
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ServiceModal from './ServiceModal'
+import ModalService from './ModalService'
 import { Col } from 'react-bootstrap'
 
 import Flip from 'react-reveal/Flip';
@@ -21,7 +21,7 @@ function Service(props) {
                     </div>
                     <div className="services-box-content">
                         <h4>{props.title}</h4>
-                        <ServiceModal
+                        <ModalService
                             title={props.title}
                             path={props.path}
                             show={showModal}

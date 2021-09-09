@@ -1,12 +1,12 @@
 import React from 'react'
-import Section from './Section'
+import Section from '../../Section'
 import { Col, Row } from 'react-bootstrap'
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 import { NavLink } from 'react-router-dom';
 
 import Fade from 'react-reveal/Fade'
 
-function SectionShop() {
+function Shop() {
     return (
         <Section id='sklep' name="shop" paralax='true'>
             <Row className='justify-content-end'>
@@ -23,4 +23,4 @@ function SectionShop() {
     )
 }
 
-export default SectionShop
+export default Shop

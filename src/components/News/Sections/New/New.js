@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
 
+import ModalNews from './ModalNews';
 
-import NewsModal from './NewsModal';
-
-function News(props) {
+function New(props) {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -24,7 +23,7 @@ function News(props) {
                     <div className='card-read-more mt-3'>
                         <a >Czytaj więcej {'>'}</a>
                     </div>
-                    <NewsModal
+                    <ModalNews
                             title={props.title}
                             imagePath={props.imagePath}
                             alt={props.alt}
@@ -39,4 +38,4 @@ function News(props) {
     )
 }
 
-export default News
+export default New

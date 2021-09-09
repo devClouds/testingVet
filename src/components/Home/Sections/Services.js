@@ -1,14 +1,14 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
-import Section from './Section'
-import Service from './Service'
-import SectionTitle from './SectionTitle'
+import Section from '../../Section'
+import Service from './Service/Service'
+import SectionTitle from '../../SectionTitle'
 
-import ServicesList from '../json/Services.json'
+import ServicesList from '../../../json/Services.json'
 
 import Fade from 'react-reveal/Fade'
 
-function SectionServices() {
+function Services() {
     return (
         <Section id='uslugi' name='services'>
             <div className='justify-content-center text-center'>
@@ -32,4 +32,4 @@ function SectionServices() {
     )
 }
 
-export default SectionServices
+export default Services

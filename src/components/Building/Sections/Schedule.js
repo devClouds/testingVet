@@ -1,13 +1,13 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
-import Section from './Section'
+import Section from '../../Section'
 
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 
 import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
-function SectionBuildingSchedule() {
+function Schedule() {
     return (
         <Section id='wstęp' name='building-schedule'>
             <div className='justify-content-center text-center'>
@@ -60,4 +60,4 @@ function SectionBuildingSchedule() {
     )
 }
 
-export default SectionBuildingSchedule
+export default Schedule

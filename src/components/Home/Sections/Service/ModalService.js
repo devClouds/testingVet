@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal  } from 'react-bootstrap'
 
-function ServiceModal(props) {
+function ModalService(props) {
 
     return (
         <Modal
@@ -26,4 +26,4 @@ function ServiceModal(props) {
     )
 }
 
-export default ServiceModal
+export default ModalService

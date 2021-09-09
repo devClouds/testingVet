@@ -1,12 +1,12 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import Section from './Section'
-import SectionTitle from './SectionTitle'
+import Section from '../../Section'
+import SectionTitle from '../../SectionTitle'
 import { NavLink } from 'react-router-dom';
 
 import Fade from 'react-reveal/Fade'
 
-function SectionNews() {
+function News() {
     return (
         <Section id='aktualnosci' name='news' paralax='true'>
             <Row>
@@ -23,4 +23,4 @@ function SectionNews() {
     )
 }
 
-export default SectionNews
+export default News

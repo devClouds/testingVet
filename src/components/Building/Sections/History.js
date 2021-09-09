@@ -1,11 +1,11 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import Section from './Section'
-import SectionTitle from './SectionTitle'
+import Section from '../../Section'
+import SectionTitle from '../../SectionTitle'
 
 import Fade from 'react-reveal/Fade'
 
-function SectionBuildingHistory() {
+function History() {
     return (
         <Section id='historia' name='building-history' paralax='true'>
             <Row>
@@ -22,4 +22,4 @@ function SectionBuildingHistory() {
     )
 }
 
-export default SectionBuildingHistory
+export default History

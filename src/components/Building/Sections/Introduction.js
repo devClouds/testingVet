@@ -1,11 +1,11 @@
 import React from 'react'
-import Section from './Section'
+import Section from '../../Section'
 
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../../SectionTitle'
 
 import Fade from 'react-reveal/Fade'
 
-function SectionBuildingIntroduction() {
+function Introduction() {
     return (
         <Section id='wstęp' name='building-introduction'>
             <div className='justify-content-center text-center'>
@@ -20,4 +20,4 @@ function SectionBuildingIntroduction() {
     )
 }
 
-export default SectionBuildingIntroduction
+export default Introduction
